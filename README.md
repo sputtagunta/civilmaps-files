@@ -1,6 +1,3 @@
-# civilmaps-files
-Public, append-only archive investigating Solfice (Civil Maps) 2022 “Project Condor” asset sale. Hosts primary exhibits, timelines, vote math, compensation/inducement analysis, and court/SEC cites with SHA-256 hashes for verification. Evidence-first contributions welcome; redact sensitive data; let documents speak.
-
 # Solfice (Civil Maps) Whistleblower Repository
 
 > Public evidence, timelines, and analysis to examine the 2022 sale of Solfice Research, Inc. (d/b/a Civil Maps) assets (“Project Condor”) and related governance, disclosure, and voting issues. This repo is designed for verifiability, not virality.
