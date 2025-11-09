@@ -1,0 +1,1366 @@
+{
+  "company": "Luminar Technologies Inc.",
+  "ticker": "LAZR",
+  "cik": "0001758057",
+  "start_date": "2022-07-01",
+  "fetch_date": "2025-11-09",
+  "total_filings": 226,
+  "filings": [
+    {
+      "accessionNumber": "0001758057-25-000009",
+      "filingDate": "2025-11-07",
+      "form": "8-K",
+      "primaryDocument": "lazr-20251106.htm"
+    },
+    {
+      "accessionNumber": "0000102909-25-000253",
+      "filingDate": "2025-10-31",
+      "form": "SCHEDULE 13G",
+      "primaryDocument": "xslSCHEDULE_13G_X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001758057-25-000006",
+      "filingDate": "2025-10-31",
+      "form": "8-K",
+      "primaryDocument": "lazr-20251030.htm"
+    },
+    {
+      "accessionNumber": "0002012383-25-002881",
+      "filingDate": "2025-10-17",
+      "form": "SCHEDULE 13G/A",
+      "primaryDocument": "xslSCHEDULE_13G_X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001104659-25-100177",
+      "filingDate": "2025-10-16",
+      "form": "SCHEDULE 13D/A",
+      "primaryDocument": "xslSCHEDULE_13D_X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "9999999995-25-002834",
+      "filingDate": "2025-09-04",
+      "form": "EFFECT",
+      "primaryDocument": "xslEFFECTX01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001628280-25-041040",
+      "filingDate": "2025-08-22",
+      "form": "S-3/A",
+      "primaryDocument": "luminar-sx3a1xaugust2025.htm"
+    },
+    {
+      "accessionNumber": "0001011712-25-000016",
+      "filingDate": "2025-08-14",
+      "form": "SCHEDULE 13G/A",
+      "primaryDocument": "xslSCHEDULE_13G_X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001628280-25-040161",
+      "filingDate": "2025-08-13",
+      "form": "10-Q",
+      "primaryDocument": "lazr-20250630.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-039886",
+      "filingDate": "2025-08-12",
+      "form": "8-K",
+      "primaryDocument": "lazr-20250812.htm"
+    },
+    {
+      "accessionNumber": "0000950170-25-099846",
+      "filingDate": "2025-07-29",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0000950170-25-099845",
+      "filingDate": "2025-07-29",
+      "form": "3",
+      "primaryDocument": "xslF345X02/ownership.xml"
+    },
+    {
+      "accessionNumber": "0001628280-25-036423",
+      "filingDate": "2025-07-29",
+      "form": "8-K",
+      "primaryDocument": "lazr-20250729.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-036414",
+      "filingDate": "2025-07-29",
+      "form": "424B5",
+      "primaryDocument": "luminar-finalx424b5xjuly20.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-036289",
+      "filingDate": "2025-07-29",
+      "form": "S-3",
+      "primaryDocument": "luminar-sx3xjuly2025.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-036216",
+      "filingDate": "2025-07-28",
+      "form": "S-8",
+      "primaryDocument": "luminar-formsx8eipincrease.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-036214",
+      "filingDate": "2025-07-28",
+      "form": "S-8",
+      "primaryDocument": "luminar-formsx8inducemente.htm"
+    },
+    {
+      "accessionNumber": "0002052113-25-003221",
+      "filingDate": "2025-07-17",
+      "form": "SCHEDULE 13G",
+      "primaryDocument": "xslSCHEDULE_13G_X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001011712-25-000012",
+      "filingDate": "2025-07-11",
+      "form": "SCHEDULE 13G",
+      "primaryDocument": "xslSCHEDULE_13G_X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0000950170-25-094700",
+      "filingDate": "2025-07-08",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0000950170-25-094681",
+      "filingDate": "2025-07-08",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0000950170-25-094680",
+      "filingDate": "2025-07-08",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0000950170-25-094679",
+      "filingDate": "2025-07-08",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0000950170-25-094678",
+      "filingDate": "2025-07-08",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0000950170-25-094677",
+      "filingDate": "2025-07-08",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0000950170-25-094676",
+      "filingDate": "2025-07-08",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0000950170-25-094675",
+      "filingDate": "2025-07-08",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0001628280-25-034521",
+      "filingDate": "2025-07-08",
+      "form": "8-K",
+      "primaryDocument": "lazr-20250703.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-029814",
+      "filingDate": "2025-06-06",
+      "form": "ARS",
+      "primaryDocument": "luminartechnologiesinc2024.pdf"
+    },
+    {
+      "accessionNumber": "0001628280-25-029810",
+      "filingDate": "2025-06-06",
+      "form": "DEF 14A",
+      "primaryDocument": "lazr-20250605.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-028572",
+      "filingDate": "2025-05-30",
+      "form": "SD",
+      "primaryDocument": "formsdfy2024.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-027993",
+      "filingDate": "2025-05-27",
+      "form": "PRE 14A",
+      "primaryDocument": "lazr-20250527.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-027955",
+      "filingDate": "2025-05-27",
+      "form": "8-K/A",
+      "primaryDocument": "lazr-20250514.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-027435",
+      "filingDate": "2025-05-23",
+      "form": "8-K",
+      "primaryDocument": "lazr-20250522.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-027337",
+      "filingDate": "2025-05-22",
+      "form": "8-K",
+      "primaryDocument": "lazr-20250522.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-027150",
+      "filingDate": "2025-05-22",
+      "form": "424B5",
+      "primaryDocument": "luminar-424b5.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-027120",
+      "filingDate": "2025-05-21",
+      "form": "8-K",
+      "primaryDocument": "lazr-20250519.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-026904",
+      "filingDate": "2025-05-20",
+      "form": "10-Q",
+      "primaryDocument": "lazr-20250331.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-026157",
+      "filingDate": "2025-05-16",
+      "form": "NT 10-Q",
+      "primaryDocument": "luminar-form12bx25nt10xqq1.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-025659",
+      "filingDate": "2025-05-15",
+      "form": "8-K",
+      "primaryDocument": "lazr-20250514.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-025599",
+      "filingDate": "2025-05-15",
+      "form": "8-K",
+      "primaryDocument": "lazr-20250514.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-025567",
+      "filingDate": "2025-05-14",
+      "form": "8-K",
+      "primaryDocument": "lazr-20250514.htm"
+    },
+    {
+      "accessionNumber": "0000312069-25-000390",
+      "filingDate": "2025-05-13",
+      "form": "SCHEDULE 13G/A",
+      "primaryDocument": "xslSCHEDULE_13G_X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001085146-25-002865",
+      "filingDate": "2025-05-09",
+      "form": "SCHEDULE 13G/A",
+      "primaryDocument": "xslSCHEDULE_13G_X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0000950170-25-067410",
+      "filingDate": "2025-05-08",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0001140361-25-016866",
+      "filingDate": "2025-05-01",
+      "form": "SCHEDULE 13G/A",
+      "primaryDocument": "xslSCHEDULE_13G_X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001628280-25-021105",
+      "filingDate": "2025-04-30",
+      "form": "10-K/A",
+      "primaryDocument": "lazr-20241231.htm"
+    },
+    {
+      "accessionNumber": "0000932471-25-000610",
+      "filingDate": "2025-04-30",
+      "form": "SCHEDULE 13G/A",
+      "primaryDocument": "xslSCHEDULE_13G_X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0002052113-25-000443",
+      "filingDate": "2025-04-23",
+      "form": "SCHEDULE 13G/A",
+      "primaryDocument": "xslSCHEDULE_13G_X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "9999999995-25-000983",
+      "filingDate": "2025-04-04",
+      "form": "EFFECT",
+      "primaryDocument": "xslEFFECTX01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001628280-25-016836",
+      "filingDate": "2025-04-04",
+      "form": "424B5",
+      "primaryDocument": "luminar-2025sx3424b5.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-016052",
+      "filingDate": "2025-04-02",
+      "form": "424B3",
+      "primaryDocument": "luminar-424b3updated.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-015958",
+      "filingDate": "2025-04-01",
+      "form": "424B3",
+      "primaryDocument": "luminar-424b3.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-015939",
+      "filingDate": "2025-04-01",
+      "form": "POS AM",
+      "primaryDocument": "luminar-2025sx3asramendmen.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-015935",
+      "filingDate": "2025-04-01",
+      "form": "8-K",
+      "primaryDocument": "lazr-20250331.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-015931",
+      "filingDate": "2025-04-01",
+      "form": "S-8",
+      "primaryDocument": "luminar-formsx82020eip2025.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-015432",
+      "filingDate": "2025-03-28",
+      "form": "10-K",
+      "primaryDocument": "lazr-20241231.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-015430",
+      "filingDate": "2025-03-28",
+      "form": "8-K/A",
+      "primaryDocument": "lazr-20250323.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-015275",
+      "filingDate": "2025-03-28",
+      "form": "POSASR",
+      "primaryDocument": "luminar-2025sx3asramendmen.htm"
+    },
+    {
+      "accessionNumber": "0001628280-25-014408",
+      "filingDate": "2025-03-24",
+      "form": "8-K",
+      "primaryDocument": "lazr-20250323.htm"
+    },
+    {
+      "accessionNumber": "0000312069-25-000290",
+      "filingDate": "2025-03-21",
+      "form": "SCHEDULE 13G/A",
+      "primaryDocument": "xslSCHEDULE_13G_X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001628280-25-014115",
+      "filingDate": "2025-03-20",
+      "form": "8-K",
+      "primaryDocument": "lazr-20250320.htm"
+    },
+    {
+      "accessionNumber": "0001085146-25-001398",
+      "filingDate": "2025-02-14",
+      "form": "SCHEDULE 13G",
+      "primaryDocument": "xslSCHEDULE_13G_X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0000312069-25-000082",
+      "filingDate": "2025-02-07",
+      "form": "SCHEDULE 13G",
+      "primaryDocument": "xslSCHEDULE_13G_X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0000932471-25-000189",
+      "filingDate": "2025-01-30",
+      "form": "SCHEDULE 13G",
+      "primaryDocument": "xslSCHEDULE_13G_X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-140637",
+      "filingDate": "2024-12-26",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0001628280-24-052463",
+      "filingDate": "2024-12-26",
+      "form": "SCHEDULE 13D/A",
+      "primaryDocument": "xslSCHEDULE_13D_X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-140594",
+      "filingDate": "2024-12-26",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0001968582-24-001220",
+      "filingDate": "2024-12-23",
+      "form": "144",
+      "primaryDocument": "xsl144X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001628280-24-051082",
+      "filingDate": "2024-12-12",
+      "form": "8-K",
+      "primaryDocument": "lazr-20241206.htm"
+    },
+    {
+      "accessionNumber": "0000950170-24-134725",
+      "filingDate": "2024-12-09",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-134721",
+      "filingDate": "2024-12-09",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0001628280-24-048992",
+      "filingDate": "2024-11-22",
+      "form": "8-K",
+      "primaryDocument": "lazr-20241120.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-048172",
+      "filingDate": "2024-11-18",
+      "form": "10-Q",
+      "primaryDocument": "lazr-20240930.htm"
+    },
+    {
+      "accessionNumber": "0000950170-24-127724",
+      "filingDate": "2024-11-15",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-127722",
+      "filingDate": "2024-11-15",
+      "form": "3",
+      "primaryDocument": "xslF345X02/ownership.xml"
+    },
+    {
+      "accessionNumber": "0001628280-24-048101",
+      "filingDate": "2024-11-15",
+      "form": "8-K",
+      "primaryDocument": "lazr-20241113.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-047116",
+      "filingDate": "2024-11-12",
+      "form": "NT 10-Q",
+      "primaryDocument": "luminar-form12bx25nt10xqq3.htm"
+    },
+    {
+      "accessionNumber": "0000932471-24-001037",
+      "filingDate": "2024-11-12",
+      "form": "SC 13G/A",
+      "primaryDocument": "UnitedStates_13G__LuminarTec.txt"
+    },
+    {
+      "accessionNumber": "0001628280-24-046891",
+      "filingDate": "2024-11-12",
+      "form": "8-K",
+      "primaryDocument": "lazr-20241111.htm"
+    },
+    {
+      "accessionNumber": "0002012383-24-003614",
+      "filingDate": "2024-11-08",
+      "form": "SC 13G/A",
+      "primaryDocument": "us5504241051_110824.txt"
+    },
+    {
+      "accessionNumber": "0000932471-24-000549",
+      "filingDate": "2024-11-04",
+      "form": "SC 13G/A",
+      "primaryDocument": "UnitedStates_13G__LuminarTec.txt"
+    },
+    {
+      "accessionNumber": "0001628280-24-044750",
+      "filingDate": "2024-11-01",
+      "form": "8-K",
+      "primaryDocument": "lazr-20241030.htm"
+    },
+    {
+      "accessionNumber": "0002012383-24-001666",
+      "filingDate": "2024-10-22",
+      "form": "SC 13G/A",
+      "primaryDocument": "us5504241051_102224.txt"
+    },
+    {
+      "accessionNumber": "0001628280-24-043141",
+      "filingDate": "2024-10-21",
+      "form": "DEFA14A",
+      "primaryDocument": "a1021defa14a.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-043139",
+      "filingDate": "2024-10-21",
+      "form": "8-K",
+      "primaryDocument": "lazr-20241015.htm"
+    },
+    {
+      "accessionNumber": "0001140361-24-043673",
+      "filingDate": "2024-10-18",
+      "form": "SC 13G",
+      "primaryDocument": "ef20037368_sc13g.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-041117",
+      "filingDate": "2024-09-23",
+      "form": "8-K",
+      "primaryDocument": "lazr-20240920.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-040535",
+      "filingDate": "2024-09-16",
+      "form": "DEFA14A",
+      "primaryDocument": "september2024additionalpro.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-040534",
+      "filingDate": "2024-09-16",
+      "form": "DEF 14A",
+      "primaryDocument": "a2024definitiveproxyspecia.htm"
+    },
+    {
+      "accessionNumber": "0000950170-24-104507",
+      "filingDate": "2024-09-06",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0001628280-24-039691",
+      "filingDate": "2024-09-06",
+      "form": "PRE 14A",
+      "primaryDocument": "a2024preliminaryproxyspeci.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-038970",
+      "filingDate": "2024-08-30",
+      "form": "8-K",
+      "primaryDocument": "lazr-20240828.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-036245",
+      "filingDate": "2024-08-08",
+      "form": "10-Q",
+      "primaryDocument": "lazr-20240630.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-036225",
+      "filingDate": "2024-08-08",
+      "form": "424B5",
+      "primaryDocument": "a424b5virtuprosuppaugust.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-035190",
+      "filingDate": "2024-08-06",
+      "form": "8-K",
+      "primaryDocument": "lazr-20240806.htm"
+    },
+    {
+      "accessionNumber": "0000950170-24-070956",
+      "filingDate": "2024-06-07",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-070955",
+      "filingDate": "2024-06-07",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-070953",
+      "filingDate": "2024-06-07",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-070949",
+      "filingDate": "2024-06-07",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-070948",
+      "filingDate": "2024-06-07",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-070947",
+      "filingDate": "2024-06-07",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-070945",
+      "filingDate": "2024-06-07",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-070944",
+      "filingDate": "2024-06-07",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0000950170-24-070943",
+      "filingDate": "2024-06-07",
+      "form": "4",
+      "primaryDocument": "xslF345X05/ownership.xml"
+    },
+    {
+      "accessionNumber": "0001628280-24-027282",
+      "filingDate": "2024-06-07",
+      "form": "S-8",
+      "primaryDocument": "luminar-formsx82020eip2024.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-027275",
+      "filingDate": "2024-06-07",
+      "form": "8-K",
+      "primaryDocument": "lazr-20240605.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-026036",
+      "filingDate": "2024-05-31",
+      "form": "SD",
+      "primaryDocument": "formsdfy2023.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-022459",
+      "filingDate": "2024-05-10",
+      "form": "10-Q",
+      "primaryDocument": "lazr-20240331.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-021073",
+      "filingDate": "2024-05-07",
+      "form": "8-K",
+      "primaryDocument": "lazr-20240507.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-020358",
+      "filingDate": "2024-05-03",
+      "form": "S-3ASR",
+      "primaryDocument": "luminar-2024sx3asr.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-020322",
+      "filingDate": "2024-05-03",
+      "form": "8-K",
+      "primaryDocument": "lazr-20240503.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-018279",
+      "filingDate": "2024-04-25",
+      "form": "ARS",
+      "primaryDocument": "luminartechnologiesinc2023.pdf"
+    },
+    {
+      "accessionNumber": "0001628280-24-018276",
+      "filingDate": "2024-04-25",
+      "form": "DEFA14A",
+      "primaryDocument": "a2024additionalproxymateri.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-018274",
+      "filingDate": "2024-04-25",
+      "form": "DEF 14A",
+      "primaryDocument": "lazr-20240425.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-012951",
+      "filingDate": "2024-03-26",
+      "form": "8-K",
+      "primaryDocument": "lazr-20240325.htm"
+    },
+    {
+      "accessionNumber": "0001209191-24-004690",
+      "filingDate": "2024-03-07",
+      "form": "4",
+      "primaryDocument": "xslF345X05/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-24-004689",
+      "filingDate": "2024-03-07",
+      "form": "4",
+      "primaryDocument": "xslF345X05/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001628280-24-007616",
+      "filingDate": "2024-02-28",
+      "form": "10-K",
+      "primaryDocument": "lazr-20231231.htm"
+    },
+    {
+      "accessionNumber": "0001628280-24-007198",
+      "filingDate": "2024-02-27",
+      "form": "8-K",
+      "primaryDocument": "lazr-20240227.htm"
+    },
+    {
+      "accessionNumber": "0001104659-24-021380",
+      "filingDate": "2024-02-13",
+      "form": "SC 13G/A",
+      "primaryDocument": "tv01373-luminartechnologiesi.htm"
+    },
+    {
+      "accessionNumber": "0001086364-24-006018",
+      "filingDate": "2024-01-31",
+      "form": "SC 13G/A",
+      "primaryDocument": "us5504241051_013124.txt"
+    },
+    {
+      "accessionNumber": "0001209191-23-057829",
+      "filingDate": "2023-12-07",
+      "form": "4",
+      "primaryDocument": "xslF345X05/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-057828",
+      "filingDate": "2023-12-07",
+      "form": "4",
+      "primaryDocument": "xslF345X05/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-057827",
+      "filingDate": "2023-12-07",
+      "form": "4",
+      "primaryDocument": "xslF345X05/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001628280-23-038702",
+      "filingDate": "2023-11-13",
+      "form": "8-K",
+      "primaryDocument": "lazr-20231113.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-038700",
+      "filingDate": "2023-11-13",
+      "form": "424B5",
+      "primaryDocument": "luminarvendorprosuppnovemb.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-037965",
+      "filingDate": "2023-11-09",
+      "form": "10-Q",
+      "primaryDocument": "lazr-20230930.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-037844",
+      "filingDate": "2023-11-08",
+      "form": "8-K",
+      "primaryDocument": "lazr-20231108.htm"
+    },
+    {
+      "accessionNumber": "0001209191-23-050908",
+      "filingDate": "2023-10-02",
+      "form": "4",
+      "primaryDocument": "xslF345X05/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-050907",
+      "filingDate": "2023-10-02",
+      "form": "4",
+      "primaryDocument": "xslF345X05/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-050906",
+      "filingDate": "2023-10-02",
+      "form": "4",
+      "primaryDocument": "xslF345X05/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-050905",
+      "filingDate": "2023-10-02",
+      "form": "4",
+      "primaryDocument": "xslF345X05/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-050904",
+      "filingDate": "2023-10-02",
+      "form": "4",
+      "primaryDocument": "xslF345X05/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-050903",
+      "filingDate": "2023-10-02",
+      "form": "4",
+      "primaryDocument": "xslF345X05/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-050902",
+      "filingDate": "2023-10-02",
+      "form": "4",
+      "primaryDocument": "xslF345X05/doc4.xml"
+    },
+    {
+      "accessionNumber": "9999999995-23-002603",
+      "filingDate": "2023-09-08",
+      "form": "EFFECT",
+      "primaryDocument": "xslEFFECTX01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-048793",
+      "filingDate": "2023-09-08",
+      "form": "4",
+      "primaryDocument": "xslF345X05/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-048792",
+      "filingDate": "2023-09-08",
+      "form": "4",
+      "primaryDocument": "xslF345X05/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001628280-23-031789",
+      "filingDate": "2023-09-08",
+      "form": "424B3",
+      "primaryDocument": "luminar424b3august2023.htm"
+    },
+    {
+      "accessionNumber": "0001959173-23-003797",
+      "filingDate": "2023-09-06",
+      "form": "144",
+      "primaryDocument": "xsl144X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001959173-23-003796",
+      "filingDate": "2023-09-06",
+      "form": "144",
+      "primaryDocument": "xsl144X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001628280-23-031544",
+      "filingDate": "2023-09-06",
+      "form": "CORRESP",
+      "primaryDocument": "filename1.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-028667",
+      "filingDate": "2023-08-09",
+      "form": "S-3/A",
+      "primaryDocument": "luminars-3aaugust2023.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-028281",
+      "filingDate": "2023-08-08",
+      "form": "10-Q",
+      "primaryDocument": "lazr-20230630.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-028174",
+      "filingDate": "2023-08-08",
+      "form": "8-K",
+      "primaryDocument": "lazr-20230808.htm"
+    },
+    {
+      "accessionNumber": "0001209191-23-036032",
+      "filingDate": "2023-06-09",
+      "form": "4",
+      "primaryDocument": "xslF345X04/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-036030",
+      "filingDate": "2023-06-09",
+      "form": "4",
+      "primaryDocument": "xslF345X04/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-036029",
+      "filingDate": "2023-06-09",
+      "form": "4",
+      "primaryDocument": "xslF345X04/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-036028",
+      "filingDate": "2023-06-09",
+      "form": "4",
+      "primaryDocument": "xslF345X04/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-036027",
+      "filingDate": "2023-06-09",
+      "form": "4",
+      "primaryDocument": "xslF345X04/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-036026",
+      "filingDate": "2023-06-09",
+      "form": "4",
+      "primaryDocument": "xslF345X04/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-036025",
+      "filingDate": "2023-06-09",
+      "form": "4",
+      "primaryDocument": "xslF345X04/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001628280-23-021766",
+      "filingDate": "2023-06-09",
+      "form": "S-8",
+      "primaryDocument": "luminar-formsx82020eip2023.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-021762",
+      "filingDate": "2023-06-09",
+      "form": "S-8",
+      "primaryDocument": "luminar-formsx82023401kmat.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-021717",
+      "filingDate": "2023-06-09",
+      "form": "8-K",
+      "primaryDocument": "lazr-20230607.htm"
+    },
+    {
+      "accessionNumber": "0001959173-23-001734",
+      "filingDate": "2023-06-08",
+      "form": "144",
+      "primaryDocument": "xsl144X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-035211",
+      "filingDate": "2023-06-07",
+      "form": "4",
+      "primaryDocument": "xslF345X04/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-035207",
+      "filingDate": "2023-06-07",
+      "form": "4",
+      "primaryDocument": "xslF345X04/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001959173-23-001595",
+      "filingDate": "2023-06-06",
+      "form": "144",
+      "primaryDocument": "xsl144X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001959173-23-001593",
+      "filingDate": "2023-06-06",
+      "form": "144",
+      "primaryDocument": "xsl144X01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-030536",
+      "filingDate": "2023-05-18",
+      "form": "4",
+      "primaryDocument": "xslF345X04/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-030445",
+      "filingDate": "2023-05-17",
+      "form": "4",
+      "primaryDocument": "xslF345X04/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001628280-23-018637",
+      "filingDate": "2023-05-17",
+      "form": "SC 13D/A",
+      "primaryDocument": "luminar-schedule13damendme.htm"
+    },
+    {
+      "accessionNumber": "0001209191-23-029702",
+      "filingDate": "2023-05-16",
+      "form": "4",
+      "primaryDocument": "xslF345X04/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001628280-23-018191",
+      "filingDate": "2023-05-15",
+      "form": "8-K",
+      "primaryDocument": "lazr-20230510.htm"
+    },
+    {
+      "accessionNumber": "0001209191-23-029376",
+      "filingDate": "2023-05-15",
+      "form": "4",
+      "primaryDocument": "xslF345X04/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001628280-23-017277",
+      "filingDate": "2023-05-10",
+      "form": "424B5",
+      "primaryDocument": "luminarvendorprosuppmay2023.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-016922",
+      "filingDate": "2023-05-10",
+      "form": "10-Q",
+      "primaryDocument": "lazr-20230331.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-016811",
+      "filingDate": "2023-05-09",
+      "form": "8-K",
+      "primaryDocument": "lazr-20230509.htm"
+    },
+    {
+      "accessionNumber": "9999999995-23-001228",
+      "filingDate": "2023-05-02",
+      "form": "EFFECT",
+      "primaryDocument": "xslEFFECTX01/primary_doc.xml"
+    },
+    {
+      "accessionNumber": "0001628280-23-014919",
+      "filingDate": "2023-05-02",
+      "form": "424B3",
+      "primaryDocument": "luminar424b3may2023.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-014184",
+      "filingDate": "2023-04-28",
+      "form": "CORRESP",
+      "primaryDocument": "filename1.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-014173",
+      "filingDate": "2023-04-28",
+      "form": "DEFA14A",
+      "primaryDocument": "a2023additionalproxymateri.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-014170",
+      "filingDate": "2023-04-28",
+      "form": "DEF 14A",
+      "primaryDocument": "lazr-20230428.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-014168",
+      "filingDate": "2023-04-28",
+      "form": "ARS",
+      "primaryDocument": "luminar2022annualreport.pdf"
+    },
+    {
+      "accessionNumber": "0001628280-23-011634",
+      "filingDate": "2023-04-14",
+      "form": "PRE 14A",
+      "primaryDocument": "lazr-20230414.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-008757",
+      "filingDate": "2023-03-21",
+      "form": "8-K",
+      "primaryDocument": "lazr-20230317.htm"
+    },
+    {
+      "accessionNumber": "0001209191-23-017272",
+      "filingDate": "2023-03-08",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-23-017271",
+      "filingDate": "2023-03-08",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0000000000-23-002248",
+      "filingDate": "2023-03-07",
+      "form": "UPLOAD",
+      "primaryDocument": "filename1.pdf"
+    },
+    {
+      "accessionNumber": "0000000000-23-002247",
+      "filingDate": "2023-03-07",
+      "form": "UPLOAD",
+      "primaryDocument": "filename1.pdf"
+    },
+    {
+      "accessionNumber": "0001628280-23-005883",
+      "filingDate": "2023-03-02",
+      "form": "8-K",
+      "primaryDocument": "lazr-20230301.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-005877",
+      "filingDate": "2023-03-01",
+      "form": "424B5",
+      "primaryDocument": "luminarvirtuprosuppmarch20.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-005709",
+      "filingDate": "2023-03-01",
+      "form": "S-4",
+      "primaryDocument": "luminars-4march2023.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-005707",
+      "filingDate": "2023-03-01",
+      "form": "S-3",
+      "primaryDocument": "luminars-3march2023.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-005649",
+      "filingDate": "2023-02-28",
+      "form": "10-K",
+      "primaryDocument": "lazr-20221231.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-005553",
+      "filingDate": "2023-02-28",
+      "form": "10-Q/A",
+      "primaryDocument": "lazr-20220331.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-005523",
+      "filingDate": "2023-02-28",
+      "form": "8-K",
+      "primaryDocument": "lazr-20230228.htm"
+    },
+    {
+      "accessionNumber": "0001628280-23-005448",
+      "filingDate": "2023-02-28",
+      "form": "8-K",
+      "primaryDocument": "lazr-20230228.htm"
+    },
+    {
+      "accessionNumber": "0001104659-23-016393",
+      "filingDate": "2023-02-09",
+      "form": "SC 13G/A",
+      "primaryDocument": "tv01339-luminartechnologiesi.htm"
+    },
+    {
+      "accessionNumber": "0001306550-23-007835",
+      "filingDate": "2023-02-03",
+      "form": "SC 13G",
+      "primaryDocument": "us5504241051_020323.txt"
+    },
+    {
+      "accessionNumber": "0000000000-23-000289",
+      "filingDate": "2023-01-11",
+      "form": "UPLOAD",
+      "primaryDocument": "filename1.pdf"
+    },
+    {
+      "accessionNumber": "0001628280-22-032577",
+      "filingDate": "2022-12-27",
+      "form": "CORRESP",
+      "primaryDocument": "filename1.htm"
+    },
+    {
+      "accessionNumber": "0001209191-22-062113",
+      "filingDate": "2022-12-20",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-062112",
+      "filingDate": "2022-12-20",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-061576",
+      "filingDate": "2022-12-16",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-061358",
+      "filingDate": "2022-12-15",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-061357",
+      "filingDate": "2022-12-15",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-061356",
+      "filingDate": "2022-12-15",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-061355",
+      "filingDate": "2022-12-15",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0000000000-22-013406",
+      "filingDate": "2022-12-13",
+      "form": "UPLOAD",
+      "primaryDocument": "filename1.pdf"
+    },
+    {
+      "accessionNumber": "0001209191-22-060271",
+      "filingDate": "2022-12-07",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-060270",
+      "filingDate": "2022-12-07",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-056110",
+      "filingDate": "2022-11-08",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001628280-22-028465",
+      "filingDate": "2022-11-04",
+      "form": "10-Q",
+      "primaryDocument": "lazr-20220930.htm"
+    },
+    {
+      "accessionNumber": "0001628280-22-027827",
+      "filingDate": "2022-11-02",
+      "form": "8-K",
+      "primaryDocument": "lazr-20221102.htm"
+    },
+    {
+      "accessionNumber": "0001209191-22-053141",
+      "filingDate": "2022-10-07",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-050680",
+      "filingDate": "2022-09-20",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-050013",
+      "filingDate": "2022-09-15",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-049276",
+      "filingDate": "2022-09-09",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-048953",
+      "filingDate": "2022-09-07",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-047306",
+      "filingDate": "2022-08-24",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001628280-22-023560",
+      "filingDate": "2022-08-24",
+      "form": "8-K",
+      "primaryDocument": "lazr-20220819.htm"
+    },
+    {
+      "accessionNumber": "0001209191-22-047286",
+      "filingDate": "2022-08-23",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-047285",
+      "filingDate": "2022-08-23",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-047284",
+      "filingDate": "2022-08-23",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-047282",
+      "filingDate": "2022-08-23",
+      "form": "3",
+      "primaryDocument": "xslF345X02/doc3.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-045551",
+      "filingDate": "2022-08-12",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-045394",
+      "filingDate": "2022-08-11",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-045146",
+      "filingDate": "2022-08-10",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-044953",
+      "filingDate": "2022-08-09",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001628280-22-021669",
+      "filingDate": "2022-08-09",
+      "form": "10-Q",
+      "primaryDocument": "lazr-20220630.htm"
+    },
+    {
+      "accessionNumber": "0001628280-22-021559",
+      "filingDate": "2022-08-08",
+      "form": "8-K",
+      "primaryDocument": "lazr-20220808.htm"
+    },
+    {
+      "accessionNumber": "0001209191-22-043829",
+      "filingDate": "2022-08-02",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    },
+    {
+      "accessionNumber": "0001209191-22-041457",
+      "filingDate": "2022-07-07",
+      "form": "4",
+      "primaryDocument": "xslF345X03/doc4.xml"
+    }
+  ]
+}

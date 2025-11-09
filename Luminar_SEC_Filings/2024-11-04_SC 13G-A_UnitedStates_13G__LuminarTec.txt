@@ -1,0 +1,133 @@
+<DOCUMENT>
+<TYPE>SC 13G/A
+<SEQUENCE>1
+<FILENAME>UnitedStates_13G__LuminarTec.txt
+<TEXT>
+240.13d-102 Schedule 13G - Information to be included in statements filed
+pursuant to 240.13d-1(b), (c), and (d) and amendments thereto
+filed pursuant to 240.13d-2.
+Securities and Exchange Commission, Washington, D.C. 20549
+Schedule 13G
+Under the Securities Exchange Act of 1934
+(Amendment No. 3)*
+(Name of Issuer)
+Luminar Technologies Inc
+(Title of Class of Securities)
+Common Stock
+
+(CUSIP Number)
+
+550424105
+ (Date of Event Which Requires Filing of this Statement)
+September 30, 2024
+
+Check the appropriate box to designate the rule pursuant to which this
+Schedule is filed:
+  X   Rule 13d-1(b)
+     Rule 13d-1(c)
+     Rule 13d-1(d)
+*The remainder of this cover page shall be filled out for a reporting person's
+initial filing on this form with respect to the subject class of securities, an*
+d
+for any subsequent amendment containing information which would alter the
+disclosures provided in a prior cover page.
+
+The information required in the remainder of this cover page shall not be
+deemed to be  filed  for the purpose of Section 18 of the Securities Exchange
+Act of 1934 ( Act ) or otherwise subject to the liabilities of that section of *
+the
+Act but shall be subject to all other provisions of the Act (however, see
+the Notes).
+
+CUSIP No. 550424105
+(1) Names of reporting persons    The Vanguard Group
+
+(2) Check the appropriate box if a member of a group
+(a)
+		(see instructions)
+(b) X
+
+(3) SEC use only
+
+(4) Citizenship or place of organization  Pennsylvania
+
+Number of shares beneficially owned by each reporting person with:
+
+(5) Sole voting power                  0
+
+(6) Shared voting power              543,589
+
+(7) Sole dispositive power           28,240,135
+
+(8) Shared dispositive power       844,519
+
+(9) Aggregate amount beneficially owned by each reporting person
+29,084,654
+
+(10) Check if the aggregate amount in Row (9) excludes certain shares
+(see instructions)
+
+(11) Percent of class represented by amount in Row (9)     7.10%
+
+(12) Type of reporting person (see instructions)     IA
+
+
+Item 1(a) Name of issuer:
+Luminar Technologies Inc
+Item 1(b) Address of issuer's principal executive offices:
+2603 Discovery Drive, Suite 100 Orlando, FL 32826
+Items 2(a)-2(c). Name, Address Of principal business office, and Citizenship of*
+ persons filing:
+The Vanguard Group - 23-1945930
+100 Vanguard Blvd.
+Malvern, PA 19355
+
+
+
+2(d) Title of class of securities:
+Common Stock
+2(e) CUSIP Number:
+550424105
+
+Item 3. This statement is being filed pursuant to Rule 13d-1.
+
+An investment adviser in accordance with  240.13d-1(b)(1)(ii)(E).
+
+
+
+Item 4. Ownership
+
+As of the close of business on September 30, 2024:
+
+(a)  Aggregate amount beneficially owned:  29,084,654
+(b)  Percent of class:  7.10%
+(c)  Number of shares as to which person has:
+1. The Vanguard Group
+(a) Amount beneficially owned: 29,084,654
+(b) Percent of class: 7.10%
+(c) Number of shares as to which the person has:
+(i) Sole power to vote or to direct the vote: 0
+(ii) Shared power to vote or to direct the vote: 543,589
+(iii) Sole power to dispose or to direct the disposition of: 28,240,135
+(iv) Shared power to dispose or to direct the disposition of: 844,519
+
+
+Item 5.Ownership of 5 Percent or Less of a Class.
+
+If this statement is being filed to report the fact that as of the date hereof
+the reporting person has ceased to be the beneficial owner of more than
+5 percent of the class of securities, check the following .
+
+Item 6.  Ownership of More than 5 Percent on Behalf of Another Person.
+
+The Vanguard Group, Inc.'s clients, including investment companies registered u*
+nder the Investment Company Act of 1940 and other managed accounts, have the ri*
+ght to receive or the power to direct the receipt of dividends from, or the pro*
+ceeds from the sale of, the securities reported herein.
+
+No one other person's interest in the securities reported herein is more than 5*
+%.
+Item 7.  Identification and Classification of the Subsidiary Which Acquired
+t
+</TEXT>
+</DOCUMENT>
