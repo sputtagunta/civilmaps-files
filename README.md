@@ -1,66 +1,72 @@
-# Solfice (Civil Maps) Whistleblower Repository
+# Civil Maps §220 Books & Records Case Repository
 
-> Public evidence, timelines, and analysis to examine the 2022 sale of Solfice Research, Inc. (d/b/a Civil Maps) assets (“Project Condor”) and related governance, disclosure, and voting issues. This repo is designed for verifiability, not virality.
+> Public archive of court filings and materials from the Delaware Court of Chancery §220 books and records action concerning Solfice Research, Inc. (d/b/a Civil Maps). This repository provides transparent access to case documents, organized chronologically for independent review and verification.
 
 ---
 
 ## What this repo is
 
-* A public, append-only archive of documents and structured notes that help the public, investigators, and journalists understand what happened, when, and who approved it.
-* A changelog-driven record of exhibits and facts with cryptographic hashes so anyone can independently verify integrity.
-* A living index that maps evidence to specific questions: vote math (§271), notice/consent (§228), conflicts (§144), selective disclosure, consideration waterfall, compensation/inducements, and IP/title chain.
+* A public archive of court documents from the Delaware Court of Chancery §220 books and records case
+* An organized collection of verified complaint, affidavits, briefs, and correspondence filed in the action
+* A resource for stockholders, journalists, and the public to access and review case materials independently
+* A chronological record of the progression of the §220 litigation
 
 ## What this repo is **not**
 
-* Not a place to dox, harass, or post personal data.
-* Not rumor aggregation. Every claim must tie to a document, a sworn statement, or a verifiable public record.
-* Not legal advice.
+* Not a place to dox, harass, or post personal data
+* Not rumor aggregation—only court filings and public records are included
+* Not legal advice or legal representation
+* Not a substitute for official court records available through the Delaware Court of Chancery
 
 ---
 
 ## Repository structure
 
 ```
-/README.md                 — You are here
-/CLAIMS/                   — Each claim in one file: facts, sources, status, open questions
-/TIMELINES/                — Chronologies (board actions, consents, money flows, filings)
-/EXHIBITS/                 — Primary docs (PDFs) + .sha256 checksums
-/BRIEFS/                   — Public court filings and sworn affidavits
-/ANALYSIS/                 — Valuation/waterfall models, vote math, scenario trees
-/SEC/                      — Tip IDs (redacted), public 8-K/10-Q cites, chronology of contacts
-/MEDIA/                    — Press statements, Q&A, fact sheets
-/TOOLS/                    — Scripts for hashing, PDF text extraction, and redaction
+/README.md                                              — You are here
+/220 Case/                                              — Delaware §220 books & records action materials
+  /VERIFIED COMPLAINT/                                  — Initial complaint and supporting documents
+  /AFFIDAVIT OF SERVICE/                                — Service documents and exhibits A-O
+  /ANUJ AFFIDAVIT - STOCKHOLDER STATUS/                 — Stockholder standing affidavit
+  /SRAVAN AFFIDAVIT - SUPPORT FOR PLAINTIFF'S ANSWERING BRIEF/  — Supporting affidavit
+  /SRAVAN AFFIDAVIT IN SUPPORT OF PLAINTIFF/            — Additional supporting affidavit
+  /PLAINTIFF - OPPOSITION BRIEF/                        — Opposition to motion to dismiss
+  /PLAINTIFF FIRST OPPOSITION BRIEF/                    — First opposition brief
+  /DEFENDANT MOTION TO DISMISS/                         — Defendant's motion and supporting docs
+  /DEFENDANT REPLY BRIEF/                               — Defendant's reply brief
+  /MEET_AND_CONFER_LETTER/                              — Joint status reports and correspondence
 ```
 
-### Key exhibit index (mapped to common questions)
+### Key document index (organized by folder)
 
-* **Board & Stockholder Consents** → vote authorization, conflicts disclosures, §144 cleansing, §228 process.
-* **Omnibus Amendment to Notes** → allocation of consideration, priority vs. common, contingent/holdback mechanics.
-* **Release/Severance Agreements** → compensation timing/amounts near the vote/closing; potential inducements.
-* **IP Assignment + Plan of Liquidation** → title chain, what actually transferred, dissolution/survival windows.
-* **Disclosure Schedules / Waterfall** → who got what, when, and under which conditions.
+* **VERIFIED COMPLAINT** → Initial §220 demand and basis for books & records inspection
+* **AFFIDAVIT OF SERVICE** → Exhibits A-O documenting service and supporting evidence
+* **PLAINTIFF AFFIDAVITS** → Stockholder standing and factual support for claims
+* **OPPOSITION BRIEFS** → Arguments against defendant's motion to dismiss
+* **DEFENDANT BRIEFS** → Motion to dismiss and reply brief with supporting affidavits
+* **CORRESPONDENCE** → Meet and confer letters and joint status reports
 
-> Each file in `/EXHIBITS` has a matching `.sha256` and a short “why this matters” note in `/CLAIMS`.
+> Documents are organized chronologically within each folder to track the progression of the §220 action.
 
 ---
 
 ## Quick start
 
-1. **Verify integrity**
+1. **Review the case progression**
 
-   ```bash
-   shasum -a 256 EXHIBITS/**/* | diff - CHECKSUMS.sha256
-   ```
-2. **Browse the story**
+   * Start with `220 Case/VERIFIED COMPLAINT/` to understand the initial §220 demand
+   * Review plaintiff and defendant briefs chronologically
+   * Check `220 Case/AFFIDAVIT OF SERVICE/` for supporting exhibits A-O
 
-   * Start with `TIMELINES/00_master.md`.
-   * Then read `CLAIMS/*.md`—each links back to exhibits and docket cites.
-3. **Replicate the math**
+2. **Verify document integrity**
 
-   * Open `ANALYSIS/waterfall.xlsx` or `ANALYSIS/waterfall.ipynb` and rerun the scenarios.
-4. **Track changes**
+   * Each folder may contain `.sha256` checksums for verification
+   * Check file metadata and timestamps for authenticity
 
-   * Every PR must update the relevant timeline and claim files and include hashes for any new exhibits.
+3. **Track case developments**
+
+   * New filings will be added to the `220 Case/` folder as they become available
+   * Every PR must include the document date and docket information
 
 ---
 
@@ -76,7 +82,7 @@
   Hash (SHA256): <hash>
   ```
 * **Neutral verbs, specific nouns:** “Board executed X” > “They secretly did X.” Let documents do the talking.
-* **Cross-reference:** Update `TIMELINES` and at least one `CLAIMS` file with links to the new exhibit.
+* **Cross-reference:** Place documents in the appropriate `220 Case/` subfolder and update this README if adding new case materials.
 
 Submit via PR. Use the template in `.github/PULL_REQUEST_TEMPLATE.md`.
 
@@ -92,9 +98,9 @@ Submit via PR. Use the template in `.github/PULL_REQUEST_TEMPLATE.md`.
 
 ## Verification & reproducibility
 
-* **Hashes:** All PDFs/CSVs carry SHA-256 checksums; releases include a signed `CHECKSUMS.sha256`.
-* **Deterministic scripts:** `/TOOLS` contains small, auditable Python/CLI utilities for hashing, diffing, and text extraction.
-* **Evidence map:** `CLAIMS/_index.md` shows claim ⇄ exhibit links and confidence levels (High/Med/Low).
+* **Hashes:** PDFs may carry SHA-256 checksums for verification; consider adding `CHECKSUMS.sha256` to folders.
+* **Court dockets:** All documents should reference Delaware Court of Chancery docket numbers for independent verification.
+* **Public records:** Case filings can be independently verified through Delaware's public court records system.
 
 ---
 
@@ -108,13 +114,16 @@ Submit via PR. Use the template in `.github/PULL_REQUEST_TEMPLATE.md`.
 
 ## License
 
-* **Documents & analysis:** CC BY 4.0
-* **Code in /TOOLS:** MIT
+* **Court documents:** Public court records; no copyright claimed on official filings
+* **Repository organization & documentation:** CC BY 4.0
+* **Any scripts in /TOOLS (if added):** MIT
 
 ---
 
 ## Why this exists
 
-Markets and courts rely on uniform, material disclosure to all voting holders. Concentrating the primary paperwork, vote math, consideration allocations, and compensation timing in one verifiable place helps everyone—shareholders, regulators, and future founders—see the same record and draw their own conclusions.
+Delaware §220 provides stockholders a statutory right to inspect books and records when they demonstrate a proper purpose. This repository consolidates court filings, affidavits, and related materials from the ongoing §220 action in a publicly accessible format. By making these documents readily available, shareholders, investigators, journalists, and the public can independently review the arguments, evidence, and progression of the case.
 
-> If you mirror this repo, please preserve the directory structure and `CHECKSUMS.sha256` so hashes continue to match.
+Transparency in corporate governance matters. This repo serves as a centralized, verifiable archive of the legal proceedings seeking access to Civil Maps' books and records.
+
+> If you mirror this repo, please preserve the directory structure and document metadata so the record remains intact.
