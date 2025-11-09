@@ -17,6 +17,91 @@
             color: #333;
             background: #f5f5f5;
             padding: 20px;
+            padding-top: 80px;
+        }
+
+        /* Sticky Navigation */
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #2c3e50;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            padding: 0;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-title {
+            color: white;
+            font-size: 1.2em;
+            font-weight: 600;
+            padding: 15px 0;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-menu li {
+            margin: 0;
+        }
+
+        .nav-menu a {
+            display: block;
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 20px 20px;
+            transition: all 0.3s;
+            font-size: 0.95em;
+            font-weight: 500;
+            border-bottom: 3px solid transparent;
+        }
+
+        .nav-menu a:hover {
+            background: #34495e;
+            border-bottom-color: #3498db;
+            color: white;
+        }
+
+        .nav-menu a.active {
+            background: #34495e;
+            border-bottom-color: #3498db;
+        }
+
+        @media (max-width: 968px) {
+            .nav-container {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .nav-title {
+                padding: 10px 0;
+            }
+
+            .nav-menu {
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .nav-menu a {
+                padding: 12px 15px;
+                font-size: 0.85em;
+            }
         }
 
         .container {
@@ -94,6 +179,53 @@
             color: #95a5a6;
             font-style: italic;
             border-radius: 4px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .section-container {
+            background: #f8f9fa;
+            border-left: 4px solid #e74c3c;
+            padding: 25px;
+            margin-bottom: 40px;
+            border-radius: 4px;
+        }
+
+        .section-container h2 {
+            color: #2c3e50;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e74c3c;
+        }
+
+        .section-container.sec-filings {
+            border-left-color: #3498db;
+        }
+
+        .section-container.sec-filings h2 {
+            border-bottom-color: #3498db;
+        }
+
+        .section-container.luminar {
+            border-left-color: #9b59b6;
+        }
+
+        .section-container.luminar h2 {
+            border-bottom-color: #9b59b6;
+        }
+
+        .empty-section {
+            background: #f0f0f0;
+            border: 2px dashed #bdc3c7;
+            padding: 40px;
+            text-align: center;
+            color: #95a5a6;
+            font-style: italic;
+            border-radius: 4px;
+            margin-top: 15px;
         }
 
         h2 {
@@ -291,8 +423,23 @@
     </style>
 </head>
 <body>
+    <!-- Sticky Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <div class="nav-title">Civil Maps Files</div>
+            <ul class="nav-menu">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#background">Case Background</a></li>
+                <li><a href="#court-filings">Court Filings</a></li>
+                <li><a href="#sec-filings">SEC Disclosures</a></li>
+                <li><a href="#liabilities">Material Issues</a></li>
+                <li><a href="#luminar-outlook">Corporate Developments</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
-        <header>
+        <header id="overview">
             <h1>Civil Maps Files</h1>
             <p class="subtitle">Delaware Court of Chancery Books & Records Action</p>
             <p class="subtitle">Solfice Research, Inc. (d/b/a Civil Maps) • Case No. 2024-1296</p>
@@ -396,7 +543,7 @@
             </p>
         </div>
 
-        <h2>📅 Case Timeline</h2>
+        <h2 id="court-filings">📅 Court Filings Timeline</h2>
 
         <div class="timeline">
             <!-- Dec 13, 2024 - Verified Complaint -->
@@ -702,6 +849,36 @@
                         <li><a href="220 Case/ANUJ AFFIDAVIT - STOCKHOLDER STATUS/Exhibit_B.pdf" target="_blank">Exhibit B</a></li>
                     </ul>
                 </div>
+            </div>
+        </div>
+
+        <div class="section-container sec-filings" id="sec-filings">
+            <h2>📊 SEC Disclosures</h2>
+            <p style="color: #34495e; line-height: 1.8; margin-bottom: 15px;">
+                This section contains Luminar Technologies, Inc. (Ticker: LAZR) SEC filings from July 2022 to present. These public disclosures provide insight into Luminar's financial condition, business operations, risk factors, and material events relevant to the Civil Maps asset acquisition.
+            </p>
+            <div class="empty-section">
+                Section under development - SEC filings analysis and summaries to be added
+            </div>
+        </div>
+
+        <div class="section-container" id="liabilities">
+            <h2>⚠️ Material Issues</h2>
+            <p style="color: #34495e; line-height: 1.8; margin-bottom: 15px;">
+                This section will analyze potential liabilities and material issues arising from the Civil Maps transaction, including disclosure deficiencies, process irregularities, and potential breaches of fiduciary duty.
+            </p>
+            <div class="empty-section">
+                Section under development - liability analysis to be added
+            </div>
+        </div>
+
+        <div class="section-container luminar" id="luminar-outlook">
+            <h2>🔮 Corporate Developments</h2>
+            <p style="color: #34495e; line-height: 1.8; margin-bottom: 15px;">
+                This section tracks Luminar Technologies' corporate developments, including potential asset sales, strategic transactions, financial performance, and business outlook following the Civil Maps acquisition.
+            </p>
+            <div class="empty-section">
+                Section under development - corporate developments analysis to be added
             </div>
         </div>
 
