@@ -230,15 +230,23 @@
 
         .section-iframe {
             width: 100%;
+            height: 100vh;
             border: none;
             border-radius: 4px;
             background: white;
-            overflow: hidden;
             display: block;
         }
 
         .iframe-container {
             margin-bottom: 40px;
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
         }
 
         h2 {
@@ -1579,22 +1587,27 @@
         <div class="nav-container">
             <div class="nav-title">Civil Maps Files</div>
             <ul class="nav-menu">
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#background">Background</a></li>
-                <li><a href="#evidence">Key Evidence</a></li>
-                <li><a href="#visualization">Analysis</a></li>
-                <li><a href="#comparison">Comparison</a></li>
-                <li><a href="#court-filings">Timeline</a></li>
+                <li><a href="#overview" class="nav-link active" data-section="overview">Overview</a></li>
+                <li><a href="#background" class="nav-link" data-section="background">Background</a></li>
+                <li><a href="#evidence" class="nav-link" data-section="evidence">Evidence</a></li>
+                <li><a href="#sec-filings" class="nav-link" data-section="sec-filings">SEC Filings</a></li>
+                <li><a href="#liabilities" class="nav-link" data-section="liabilities">Material Issues</a></li>
+                <li><a href="#luminar-outlook" class="nav-link" data-section="luminar-outlook">Corporate Dev</a></li>
+                <li><a href="#court-filings" class="nav-link" data-section="court-filings">Timeline</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="container">
+        <!-- Overview Section -->
+        <div id="overview" class="content-section active">
         <!-- TL;DR Hero Card -->
-        <div id="overview" class="tldr-hero">
+        <div class="tldr-hero">
             <div class="tldr-header">
                 <h1>Civil Maps Asset Sale: Disclosure & Vote Analysis</h1>
-                <p class="case-number">Delaware Chancery Case No. 2024-1296 | Books & Records Action</p>
+                <p class="case-number">
+                    <a href="https://courts.delaware.gov/chancery/" target="_blank" rel="noopener" style="color: #3498db; text-decoration: none; border-bottom: 2px solid #3498db;">Delaware Chancery Case No. 2024-1296-SEM</a> | Books & Records Action
+                </p>
                 <p class="status-date">Updated: November 9, 2025</p>
             </div>
 
@@ -1702,9 +1715,12 @@
                 <li><strong>Allegations vs. Documents:</strong> See comparison table below for distinction between claims, documented facts, and inferences.</li>
             </ul>
         </div>
+        </div>
+        <!-- End Overview Section -->
 
-        <!-- Case Background - Expanded -->
-        <div id="background" class="background-container-expanded">
+        <!-- Background Section -->
+        <div id="background" class="content-section">
+        <div class="background-container-expanded">
             <h2>📖 Case Background</h2>
 
             <div class="background-section">
@@ -2009,8 +2025,12 @@
                 </p>
             </div>
         </div>
+        </div>
+        <!-- End Background Section -->
 
-        <h2 id="court-filings">📅 Court Filings Timeline</h2>
+        <!-- Court Filings Section -->
+        <div id="court-filings" class="content-section">
+        <h2>📅 Court Filings Timeline</h2>
 
         <div class="timeline">
             <!-- Dec 13, 2024 - Verified Complaint -->
@@ -2333,21 +2353,36 @@
                 </div>
             </div>
         </div>
-
-        <div class="iframe-container" id="sec-filings">
-            <iframe src="sections/sec-disclosures.html" class="section-iframe" id="sec-frame" title="SEC Disclosures"></iframe>
         </div>
+        <!-- End Court Filings Section -->
 
-        <div class="iframe-container" id="liabilities">
-            <iframe src="sections/material-issues.html" class="section-iframe" id="liabilities-frame" title="Material Issues"></iframe>
+        <!-- SEC Filings Section -->
+        <div id="sec-filings" class="content-section">
+            <div class="iframe-container">
+                <iframe src="sections/sec-disclosures.html" class="section-iframe" id="sec-frame" title="SEC Disclosures"></iframe>
+            </div>
         </div>
+        <!-- End SEC Filings Section -->
 
-        <div class="iframe-container" id="luminar-outlook">
-            <iframe src="sections/corporate-developments.html" class="section-iframe" id="luminar-frame" title="Corporate Developments"></iframe>
+        <!-- Material Issues Section -->
+        <div id="liabilities" class="content-section">
+            <div class="iframe-container">
+                <iframe src="sections/material-issues.html" class="section-iframe" id="liabilities-frame" title="Material Issues"></iframe>
+            </div>
         </div>
+        <!-- End Material Issues Section -->
 
-        <!-- Key Evidentiary Clauses -->
-        <div id="evidence" class="evidentiary-section">
+        <!-- Corporate Developments Section -->
+        <div id="luminar-outlook" class="content-section">
+            <div class="iframe-container">
+                <iframe src="sections/corporate-developments.html" class="section-iframe" id="luminar-frame" title="Corporate Developments"></iframe>
+            </div>
+        </div>
+        <!-- End Corporate Developments Section -->
+
+        <!-- Evidence Section -->
+        <div id="evidence" class="content-section">
+        <div class="evidentiary-section">
             <h2>Key Evidentiary Clauses: Why Employment = Deal Consideration</h2>
 
             <div class="evidence-intro">
@@ -2483,9 +2518,12 @@
                 </div>
             </div>
         </div>
+        </div>
+        <!-- End Evidence Section -->
 
-        <!-- Visualizations: Money Map & Vote Map -->
-        <div id="visualization" class="visualization-section">
+        <!-- Visualization Section -->
+        <div id="visualization" class="content-section">
+        <div class="visualization-section">
             <h2>Transaction Structure & Vote Analysis</h2>
             <div class="viz-grid">
                 <!-- Money Map -->
@@ -2598,9 +2636,12 @@
                 <a href="220 Case/SRAVAN AFFIDAVIT - SUPPORT FOR PLAINTIFF'S ANSWERING BRIEF/Exhibit C - Voter Tally With and Without Corwin Cleansing.pdf" target="_blank" style="color: #e67e22; text-decoration: none; font-weight: 600; margin-top: 10px; display: inline-block;">View Document →</a>
             </div>
         </div>
+        </div>
+        <!-- End Visualization Section -->
 
-        <!-- Allegations vs Documents vs Inferences Table -->
-        <div id="comparison" class="comparison-table">
+        <!-- Comparison Section -->
+        <div id="comparison" class="content-section">
+        <div class="comparison-table">
             <h2>Allegations vs. Documents vs. Inferences</h2>
             <div class="table-responsive">
                 <table class="three-column-table">
@@ -2671,10 +2712,9 @@
                     </tbody>
                 </table>
             </div>
-        </div>
 
         <!-- What This Means for Luminar Investors -->
-        <div class="visualization-section" style="border-left-color: #e74c3c;">
+        <div class="visualization-section" style="border-left-color: #e74c3c; margin-top: 30px;">
             <h2 style="border-bottom-color: #e74c3c;">What This Means for Luminar Investors</h2>
 
             <div style="background: white; padding: 25px; border-radius: 8px; margin-top: 20px;">
@@ -2702,6 +2742,9 @@
                 </ul>
             </div>
         </div>
+        </div>
+        </div>
+        <!-- End Comparison Section -->
 
         <footer>
             <p><strong>Disclaimer:</strong> This is a public archive of court documents. Not legal advice. For official records, consult the Delaware Court of Chancery.</p>
@@ -2711,64 +2754,64 @@
 
     <script src="js/timeline.js"></script>
     <script>
-        // Auto-resize iframes to fit content without scrollbars
-        function resizeIframe(iframe) {
-            try {
-                if (iframe.contentWindow && iframe.contentWindow.document && iframe.contentWindow.document.body) {
-                    // Get the full content height including all margins and padding
-                    const doc = iframe.contentWindow.document;
-                    const body = doc.body;
-                    const html = doc.documentElement;
-
-                    // Calculate the maximum height from multiple sources
-                    const height = Math.max(
-                        body.scrollHeight,
-                        body.offsetHeight,
-                        html.clientHeight,
-                        html.scrollHeight,
-                        html.offsetHeight
-                    );
-
-                    // Add a buffer to prevent any scrollbars
-                    iframe.style.height = (height + 50) + 'px';
-
-                    // Ensure the iframe content doesn't have scrollbars
-                    body.style.overflow = 'hidden';
-                }
-            } catch (e) {
-                console.error('Error resizing iframe:', e);
-            }
-        }
-
-        // Resize all iframes when they load
+        // Tab-based navigation system
         document.addEventListener('DOMContentLoaded', function() {
-            const iframes = document.querySelectorAll('.section-iframe');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.content-section');
 
-            iframes.forEach(function(iframe) {
-                iframe.addEventListener('load', function() {
-                    // Multiple resize attempts with increasing delays
-                    resizeIframe(iframe);
+            // Function to show a specific section
+            function showSection(sectionId) {
+                // Hide all sections
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
 
-                    setTimeout(function() { resizeIframe(iframe); }, 50);
-                    setTimeout(function() { resizeIframe(iframe); }, 200);
-                    setTimeout(function() { resizeIframe(iframe); }, 500);
-                    setTimeout(function() { resizeIframe(iframe); }, 1000);
-                    setTimeout(function() { resizeIframe(iframe); }, 2000);
-                    setTimeout(function() { resizeIframe(iframe); }, 3000);
+                // Remove active class from all nav links
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+
+                // Show the selected section
+                const targetSection = document.getElementById(sectionId);
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                }
+
+                // Add active class to the clicked nav link
+                const activeLink = document.querySelector(`.nav-link[data-section="${sectionId}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                }
+
+                // Scroll to top of container
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            // Add click event listeners to nav links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const sectionId = this.getAttribute('data-section');
+                    showSection(sectionId);
+
+                    // Update URL hash without scrolling
+                    history.pushState(null, null, `#${sectionId}`);
                 });
             });
-        });
 
-        // Periodically check and resize iframes in case content changes
-        setInterval(function() {
-            const iframes = document.querySelectorAll('.section-iframe');
-            iframes.forEach(resizeIframe);
-        }, 2000);
+            // Handle initial hash on page load
+            const initialHash = window.location.hash.slice(1);
+            if (initialHash && document.getElementById(initialHash)) {
+                showSection(initialHash);
+            }
 
-        // Also resize on window resize
-        window.addEventListener('resize', function() {
-            const iframes = document.querySelectorAll('.section-iframe');
-            iframes.forEach(resizeIframe);
+            // Handle browser back/forward buttons
+            window.addEventListener('hashchange', function() {
+                const hash = window.location.hash.slice(1);
+                if (hash && document.getElementById(hash)) {
+                    showSection(hash);
+                }
+            });
         });
     </script>
 </body>
