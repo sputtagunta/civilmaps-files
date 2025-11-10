@@ -1243,6 +1243,266 @@
             font-style: italic;
         }
 
+        /* Background Section Styles */
+        .background-container-expanded {
+            background: #f8f9fa;
+            padding: 40px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .background-container-expanded h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        .background-section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .background-section h3 {
+            color: #2c3e50;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .background-section h4 {
+            color: #34495e;
+            font-size: 1.15em;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .background-section h5 {
+            color: #34495e;
+            font-size: 1.05em;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .background-section p {
+            line-height: 1.8;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+
+        .background-section ul {
+            margin-left: 30px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .background-section ol {
+            margin-left: 30px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .law-section {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 3px solid #3498db;
+            border-radius: 4px;
+        }
+
+        .law-section h4 {
+            color: #3498db;
+            margin-top: 0;
+        }
+
+        /* Chraim Section Styles */
+        .chraim-section {
+            border-left: 4px solid #e74c3c !important;
+        }
+
+        .chraim-summary {
+            background: #fff5f5;
+            border: 2px solid #e74c3c;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .chraim-summary p {
+            margin-bottom: 0;
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+
+        .correspondence-timeline {
+            margin-top: 25px;
+        }
+
+        .email-exchange {
+            margin: 20px 0;
+        }
+
+        .email-item {
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .plaintiff-email {
+            border-left: 5px solid #3498db;
+        }
+
+        .defense-email {
+            border-left: 5px solid #e74c3c;
+        }
+
+        .email-header {
+            background: #2c3e50;
+            color: white;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .email-date {
+            font-weight: 700;
+            font-size: 0.9em;
+        }
+
+        .email-from {
+            font-size: 0.85em;
+            opacity: 0.9;
+        }
+
+        .email-body {
+            background: white;
+            padding: 20px;
+        }
+
+        .email-body p {
+            margin-bottom: 12px;
+        }
+
+        .email-body blockquote {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px 20px;
+            margin: 10px 0;
+            font-style: italic;
+            color: #34495e;
+            line-height: 1.7;
+        }
+
+        .defense-email .email-body blockquote {
+            border-left-color: #e74c3c;
+        }
+
+        .delaware-law-principle {
+            background: #e8f4f8;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border-left: 4px solid #3498db;
+        }
+
+        .precedent-box {
+            background: white;
+            border: 2px solid #3498db;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .precedent-box strong {
+            color: #3498db;
+            font-size: 1.1em;
+        }
+
+        .analysis-box {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border: 2px solid #95a5a6;
+        }
+
+        .analysis-box ol {
+            counter-reset: item;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .analysis-box ol li {
+            counter-increment: item;
+            margin-bottom: 15px;
+            padding-left: 40px;
+            position: relative;
+        }
+
+        .analysis-box ol li:before {
+            content: counter(item);
+            background: #3498db;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .conclusion-box {
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+            border: 3px solid #e74c3c;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .conclusion-box strong {
+            color: #c0392b;
+            font-size: 1.05em;
+        }
+
+        .correspondence-link {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+        }
+
+        .correspondence-link a {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .correspondence-link a:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .tldr-hero {
@@ -1443,15 +1703,193 @@
             </ul>
         </div>
 
-        <div class="iframe-container" id="background">
-            <iframe src="sections/background.html" class="section-iframe" id="background-frame" title="Case Background"></iframe>
+        <!-- Case Background - Expanded -->
+        <div id="background" class="background-container-expanded">
+            <h2>📖 Case Background</h2>
+
+            <div class="background-section">
+                <h3>The Civil Maps Asset Sale</h3>
+                <p>
+                    In 2022, Solfice Research, Inc. (d/b/a Civil Maps), an autonomous vehicle mapping technology company, sold substantially all of its assets to Luminar Technologies, Inc. through a transaction known as "Project Condor." The sale was approved by what appeared to be a 54% stockholder vote in favor of the transaction. However, according to the plaintiff's allegations, significant disclosure and process gaps may reduce the effective "cleansed" vote below the required 51% majority threshold, potentially affecting the transaction's validity under Delaware law.
+                </p>
+            </div>
+
+            <div class="background-section">
+                <h3>Transaction Structure & Key Decision Makers</h3>
+                <p>
+                    The transaction was structured as an asset sale from Solfice into Condor Acquisition Sub I and Condor Acquisition Sub II, entities associated with Luminar Technologies. Key decision makers included <strong>Austin Russell</strong> (Luminar's CEO and founder) and <strong>Thomas Fennimore</strong> (representing Luminar's interests in the transaction). On the Solfice side, the board of directors oversaw the approval process, though plaintiffs allege no special committee was formed to independently evaluate the transaction for conflicts of interest.
+                </p>
+            </div>
+
+            <div class="background-section">
+                <h3>Compensation to Solfice Insiders</h3>
+                <p>
+                    As part of the transaction, Luminar provided various forms of compensation to certain Solfice insiders, including:
+                </p>
+                <ul>
+                    <li><strong>Restricted Stock Units (RSUs)</strong> in Luminar Technologies</li>
+                    <li><strong>Release Agreements</strong> providing separation benefits</li>
+                    <li><strong>Employment agreements</strong> and other compensation arrangements</li>
+                </ul>
+                <p>
+                    Key insiders who received compensation include <strong>Stefan Safko</strong>, <strong>Scott Harvey</strong>, and <strong>Satya Vakkaleri</strong>. Critically, both Stefan Safko and Scott Harvey served as board members with fiduciary duties to all stockholders. According to Section 7.2(e) of the Asset Purchase Agreement, the employment agreements for Scott Harvey and Stefan Safko were explicitly listed as closing conditions, demonstrating their compensation was integral to the transaction's completion.
+                </p>
+            </div>
+
+            <div class="background-section chraim-section">
+                <h3>The Fabien Chraim Question: Luminar Counsel's Refusal to Deny</h3>
+
+                <div class="chraim-summary">
+                    <p><strong>Key Issue:</strong> Fabien Chraim held approximately 16% of outstanding Civil Maps shares and voted in favor of the transaction. Plaintiffs allege he received undisclosed buyer-linked consideration. <strong>When confronted with this specific factual assertion, Luminar's counsel explicitly refused to deny it.</strong></p>
+                </div>
+
+                <div class="correspondence-timeline">
+                    <h4>The October 2025 Correspondence</h4>
+
+                    <div class="email-exchange">
+                        <div class="email-item plaintiff-email">
+                            <div class="email-header">
+                                <span class="email-date">October 14, 2025</span>
+                                <span class="email-from">From: Sravan Puttagunta to Todd Scott (Luminar's counsel - Orrick)</span>
+                            </div>
+                            <div class="email-body">
+                                <p><strong>Sravan's Factual Assertion:</strong></p>
+                                <blockquote>
+                                    "Mr. Fabien Chraim, who held approximately 16% of the outstanding shares but was not a director or employee at the time, <strong>also received buyer-linked consideration at closing.</strong> That payment rendered his consent interested under Delaware law."
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="email-item plaintiff-email">
+                            <div class="email-header">
+                                <span class="email-date">October 14, 2025 (7:09 PM)</span>
+                                <span class="email-from">From: Sravan Puttagunta to Todd Scott</span>
+                            </div>
+                            <div class="email-body">
+                                <p><strong>Demand for Correction:</strong></p>
+                                <blockquote>
+                                    "I note that my prior message outlined the consideration paid to Mr. Chraim as a closing condition and its effect on the § 271 majority. As of today I have not received any correction or clarification. <strong>I will assume the substance of that paragraph is accurate unless you advise otherwise.</strong>
+                                    <br><br>
+                                    Please confirm by October 20th whether Luminar disputes any portion of that description."
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="email-item defense-email">
+                            <div class="email-header">
+                                <span class="email-date">October 15, 2025 (8:36 AM)</span>
+                                <span class="email-from">From: Todd Scott (Orrick) to Sravan Puttagunta</span>
+                            </div>
+                            <div class="email-body">
+                                <p><strong>Luminar's Response:</strong></p>
+                                <blockquote>
+                                    "Luminar rejected your Section 220 demand as legally defective in letters dated September 23 and October 7, 2025. <strong>Luminar takes no position on the allegations asserted in your emails dated October 14, 2025, below, and neither confirms nor denies your claims.</strong>"
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="email-item defense-email">
+                            <div class="email-header">
+                                <span class="email-date">October 15, 2025 (8:49 AM)</span>
+                                <span class="email-from">From: Todd Scott (Orrick) - Clarification</span>
+                            </div>
+                            <div class="email-body">
+                                <p><strong>Repeated Refusal to Deny:</strong></p>
+                                <blockquote>
+                                    "Again, Mr. Puttagunta, <strong>Luminar takes no position on your factual claims.</strong>"
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="delaware-law-principle">
+                        <h4>Delaware Law: Silence as Admission</h4>
+                        <p>
+                            Under Delaware law and federal evidence principles, when a party is confronted with a specific factual assertion and has both the knowledge and opportunity to correct it but chooses not to, that silence can create a credible basis to assume the assertion is accurate. This principle is particularly applicable in adversarial contexts where:
+                        </p>
+                        <ul>
+                            <li>The party has a strong incentive to deny false allegations</li>
+                            <li>The party has access to the underlying facts</li>
+                            <li>The assertion is specific and unambiguous</li>
+                            <li>The party explicitly acknowledges receipt of the assertion but declines to contest it</li>
+                        </ul>
+
+                        <div class="precedent-box">
+                            <strong>Legal Precedent:</strong> Courts recognize that in civil litigation, a party's failure to deny specific factual allegations when directly confronted—especially allegations within that party's unique knowledge—may be treated as an implied admission or, at minimum, removes any evidentiary barrier to accepting the allegation as credible. See <em>Wright v. Washington</em>, <em>Baxter v. Palmigiano</em>, 425 U.S. 308 (1976) (silence can support adverse inference); Delaware Rules of Evidence 801(d)(2) (adoptive admissions).
+                        </div>
+
+                        <div class="analysis-box">
+                            <h5>Application to Chraim Compensation</h5>
+                            <p><strong>Here's why Luminar's silence is significant:</strong></p>
+                            <ol>
+                                <li><strong>Specific assertion:</strong> Sravan didn't say "maybe" or "might have"—he stated flatly that Chraim "received buyer-linked consideration at closing."</li>
+                                <li><strong>Direct challenge:</strong> Sravan explicitly invited Luminar to correct the record if the assertion was false.</li>
+                                <li><strong>Repeated refusal:</strong> Even after clarification was requested, Luminar counsel maintained their "no position" stance.</li>
+                                <li><strong>Unique knowledge:</strong> Only Luminar knows who received closing-contingent compensation. If the assertion were false, Luminar could easily deny it.</li>
+                                <li><strong>Strong incentive to deny:</strong> If Chraim didn't receive compensation, his 16% "yes" vote would remain valid and count toward the 51% threshold. Luminar's silence effectively concedes this crucial vote should be excluded.</li>
+                            </ol>
+
+                            <div class="conclusion-box">
+                                <strong>Conclusion:</strong> Luminar's refusal to deny Chraim's compensation, despite multiple opportunities and strong incentive to do so, provides a credible evidentiary basis to treat the compensation as factual. Combined with Harvey and Safko's documented interested status (APA § 7.2(e)), this reduces the "disinterested" vote below the 51% threshold required by § 271.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="correspondence-link">
+                    <a href="Luminar_Correspondence/LUMINAR_AIDING_AND_ABETTING/Gmail - Inspection Demand on Luminar.pdf" target="_blank">View Full Email Thread →</a>
+                </div>
+            </div>
+
+            <div class="background-section">
+                <h3>Board Composition</h3>
+                <p>
+                    The Solfice board of directors at the time of the transaction included Stefan Safko and Scott Harvey, both of whom had fiduciary duties to act in the best interests of all stockholders. The complaint alleges that no special committee of independent directors was formed to evaluate the transaction, despite the apparent conflicts of interest arising from board members receiving compensation tied to the deal's closing.
+                </p>
+            </div>
+
+            <div class="background-section">
+                <h3>Delaware Law Framework</h3>
+                <p>This case involves several key provisions of Delaware corporate law:</p>
+
+                <div class="law-section">
+                    <h4>8 Del. C. § 271 - Sale of Assets</h4>
+                    <p>
+                        Requires approval by the board of directors and a majority of outstanding stockholder votes for a corporation to sell substantially all of its assets. This section establishes the fundamental requirement that asset sales of this magnitude must receive stockholder approval.
+                    </p>
+                </div>
+
+                <div class="law-section">
+                    <h4>8 Del. C. § 228(e) - Stockholder Consent</h4>
+                    <p>
+                        Permits stockholders to take action by written consent without a meeting, provided the consent is signed by holders of outstanding stock having the minimum votes required. However, proper notice and disclosure requirements still apply to ensure all stockholders can make informed decisions.
+                    </p>
+                </div>
+
+                <div class="law-section">
+                    <h4>8 Del. C. § 220(b) - Stockholder Inspection Rights</h4>
+                    <p>
+                        Grants stockholders the statutory right to inspect the corporation's books and records for any proper purpose reasonably related to their interest as stockholders. This right is particularly important when stockholders suspect wrongdoing, undisclosed conflicts, or improper conduct by management or the board.
+                    </p>
+                </div>
+
+                <div class="law-section">
+                    <h4>Key Concepts: Corwin Cleansing & Disclosure</h4>
+                    <p><strong>Corwin Cleansing:</strong> Under <em>Corwin v. KKR Financial Holdings LLC</em>, when a transaction not subject to the entire fairness standard is approved by a fully informed, uncoerced majority of disinterested stockholders, the business judgment rule applies and the transaction is presumed valid. However, this "cleansing" effect only applies if: (1) the vote was fully informed with proper disclosure of all material facts, (2) the majority was truly disinterested and uncoerced, and (3) no fraud or illegality occurred.</p>
+
+                    <p><strong>Disclosure Requirements:</strong> Delaware law requires that stockholders receive full and fair disclosure of all material facts before voting on significant transactions. Material facts include information that a reasonable stockholder would consider important in deciding how to vote, such as conflicts of interest, side compensation to insiders or key stockholders, financial projections, valuation opinions, and the fairness of the consideration. Failure to disclose material facts can invalidate the stockholder vote and eliminate Corwin cleansing protection.</p>
+
+                    <p><strong>Majority Vote and "Disinterested" Shares:</strong> For Corwin cleansing to apply, a majority of shares voting must be "disinterested"—meaning held by stockholders who received no side benefits or special consideration beyond their pro rata share of the transaction proceeds. If certain stockholders received undisclosed compensation, employment agreements, or other benefits tied to their affirmative votes, their shares may be deemed "interested" and excluded from the cleansing calculation.</p>
+                </div>
+            </div>
+
+            <div class="background-section">
+                <h3>The §220 Books and Records Demand</h3>
+                <p>
+                    Unable to obtain clear answers through informal requests, plaintiff stockholders filed this §220 action seeking to inspect Solfice's books and records. The goal is to investigate: (1) what compensation was provided to insiders and key stockholders, (2) whether all material facts were disclosed before the stockholder vote, (3) whether conflicts of interest were properly addressed, and (4) whether the transaction actually received approval from a majority of disinterested stockholders as required by Delaware law.
+                </p>
+            </div>
         </div>
-
-        <!-- REMOVED OLD BACKGROUND CONTENT - NOW IN sections/background.html
-        <div class="background-container">
-            <h3>📖 Case Background</h3>
-
--->
 
         <h2 id="court-filings">📅 Court Filings Timeline</h2>
 
