@@ -2729,8 +2729,8 @@
                         html.offsetHeight
                     );
 
-                    // Add a small buffer to prevent any scrollbars
-                    iframe.style.height = (height + 20) + 'px';
+                    // Add a buffer to prevent any scrollbars
+                    iframe.style.height = (height + 50) + 'px';
 
                     // Ensure the iframe content doesn't have scrollbars
                     body.style.overflow = 'hidden';
@@ -2753,6 +2753,8 @@
                     setTimeout(function() { resizeIframe(iframe); }, 200);
                     setTimeout(function() { resizeIframe(iframe); }, 500);
                     setTimeout(function() { resizeIframe(iframe); }, 1000);
+                    setTimeout(function() { resizeIframe(iframe); }, 2000);
+                    setTimeout(function() { resizeIframe(iframe); }, 3000);
                 });
             });
         });
