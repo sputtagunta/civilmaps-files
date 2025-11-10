@@ -337,8 +337,109 @@
         }
 
         @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .content-wrapper {
+                padding: 20px;
+                border-radius: 8px;
+            }
+
+            h3 {
+                font-size: 1.4em;
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+            }
+
+            h4 {
+                font-size: 1.1em;
+                margin-top: 20px;
+                flex-direction: row;
+            }
+
+            h4:before {
+                font-size: 1em;
+            }
+
+            h5 {
+                font-size: 1em;
+                margin-top: 15px;
+            }
+
+            p, ul, ol {
+                font-size: 0.95em;
+                line-height: 1.7;
+            }
+
+            ul, ol {
+                margin-left: 20px;
+            }
+
+            .statute-box {
+                padding: 15px;
+                font-size: 0.85em;
+            }
+
+            .delta-table {
+                font-size: 0.85em;
+                display: block;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .delta-table th,
+            .delta-table td {
+                padding: 10px;
+                min-width: 150px;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                padding-left: 50px;
+            }
+
+            .timeline-item::before {
+                left: 12px;
+                width: 15px;
+                height: 15px;
+            }
+
+            .timeline-content {
+                padding: 12px;
+                font-size: 0.9em;
+            }
+
+            .critical-box,
+            .key-fact-box,
+            .warning-box {
+                padding: 15px;
+                margin: 15px 0;
+            }
+
             .side-by-side {
                 grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .comparison-panel {
+                padding: 15px;
+            }
+
+            .doc-link {
+                padding: 6px 15px;
+                font-size: 0.9em;
+                display: inline-block;
+                margin-top: 10px;
+                word-break: break-word;
+            }
+
+            .statute-box .statute-link {
+                font-size: 0.85em;
+                word-break: break-word;
             }
         }
     </style>
