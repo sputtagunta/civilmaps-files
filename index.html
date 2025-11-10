@@ -233,27 +233,11 @@
             border: none;
             border-radius: 4px;
             background: white;
-            min-height: 600px;
+            overflow: hidden;
         }
 
         .iframe-container {
             margin-bottom: 40px;
-        }
-
-        #background-frame {
-            min-height: 800px;
-        }
-
-        #sec-frame {
-            min-height: 1200px;
-        }
-
-        #liabilities-frame {
-            min-height: 400px;
-        }
-
-        #luminar-frame {
-            min-height: 400px;
         }
 
         h2 {
@@ -825,5 +809,45 @@
     </div>
 
     <script src="js/timeline.js"></script>
+    <script>
+        // Auto-resize iframes to fit content
+        function resizeIframe(iframe) {
+            try {
+                if (iframe.contentWindow && iframe.contentWindow.document) {
+                    const height = iframe.contentWindow.document.body.scrollHeight;
+                    iframe.style.height = height + 'px';
+                }
+            } catch (e) {
+                console.error('Error resizing iframe:', e);
+            }
+        }
+
+        // Resize all iframes when they load
+        document.addEventListener('DOMContentLoaded', function() {
+            const iframes = document.querySelectorAll('.section-iframe');
+
+            iframes.forEach(function(iframe) {
+                iframe.addEventListener('load', function() {
+                    resizeIframe(iframe);
+
+                    // Retry after a short delay to handle delayed content
+                    setTimeout(function() {
+                        resizeIframe(iframe);
+                    }, 100);
+
+                    // Also retry after 500ms for any slow-loading content
+                    setTimeout(function() {
+                        resizeIframe(iframe);
+                    }, 500);
+                });
+            });
+        });
+
+        // Periodically check and resize iframes in case content changes
+        setInterval(function() {
+            const iframes = document.querySelectorAll('.section-iframe');
+            iframes.forEach(resizeIframe);
+        }, 2000);
+    </script>
 </body>
 </html>
