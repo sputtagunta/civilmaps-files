@@ -7,45 +7,122 @@
         html, body {
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
+            overflow: hidden;
         }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.8;
             color: #34495e;
-            padding: 25px;
-            background: #e8f4f8;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 12px;
+            padding: 35px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
         }
 
         h3 {
-            color: #2c3e50;
-            font-size: 1.3em;
-            margin-bottom: 15px;
-            font-weight: 600;
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            font-weight: 700;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 15px;
         }
 
         h4 {
             color: #2c3e50;
-            margin-top: 20px;
-            margin-bottom: 10px;
+            font-size: 1.3em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h4:before {
+            content: "▸";
+            color: #667eea;
+            font-size: 1.2em;
         }
 
         p {
-            margin-bottom: 12px;
+            margin-bottom: 15px;
+            line-height: 1.9;
         }
 
         ul {
             margin-left: 30px;
-            line-height: 1.8;
+            line-height: 1.9;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
         }
 
         strong {
             color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .highlight-quote {
+            background: linear-gradient(135deg, #fff9e6 0%, #ffe5b3 100%);
+            border-left: 5px solid #f39c12;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-style: italic;
+            color: #2c3e50;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .key-fact-box {
+            background: #e8f4f8;
+            border: 2px solid #3498db;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .key-fact-box strong {
+            color: #3498db;
+            font-size: 1.1em;
+        }
+
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            margin: 30px 0;
+            border-radius: 2px;
+        }
+
+        .doc-link {
+            display: inline-block;
+            background: #3498db;
+            color: white !important;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: all 0.3s;
+        }
+
+        .doc-link:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
         }
     </style>
 </head>
 <body>
+    <div class="content-wrapper">
     <h3>📖 Case Background</h3>
 
     <h4>The Civil Maps Asset Sale</h4>
@@ -67,14 +144,16 @@
         <li><strong>Release Agreements</strong> providing separation benefits</li>
         <li><strong>Employment agreements</strong> and other compensation arrangements</li>
     </ul>
-    <p>
+
+    <div class="highlight-quote">
         Key insiders who received compensation include <strong>Stefan Safko</strong>, <strong>Scott Harvey</strong>, and <strong>Satya Vakkaleri</strong>. Critically, both Stefan Safko and Scott Harvey served as board members with fiduciary duties to all stockholders. According to Section 7.2(e) of the Asset Purchase Agreement, the employment agreements for Scott Harvey and Stefan Safko were explicitly listed as closing conditions, demonstrating their compensation was integral to the transaction's completion.
-    </p>
+    </div>
 
     <h4>Questions About Undisclosed Compensation</h4>
-    <p>
-        Plaintiffs raise concerns that <strong>Fabien Chraim</strong>, a major common stockholder who held significant voting power, may have received undisclosed compensation in exchange for his affirmative vote. If true and if such compensation was not properly disclosed to all stockholders before the vote, this could constitute a material omission affecting the validity of the stockholder consent under Delaware law's disclosure requirements.
-    </p>
+
+    <div class="key-fact-box">
+        <strong>Key Allegation:</strong> Plaintiffs raise concerns that <strong>Fabien Chraim</strong>, a major common stockholder who held significant voting power, may have received undisclosed compensation in exchange for his affirmative vote. If true and if such compensation was not properly disclosed to all stockholders before the vote, this could constitute a material omission affecting the validity of the stockholder consent under Delaware law's disclosure requirements.
+    </div>
 
     <h4>Board Composition</h4>
     <p>
@@ -109,23 +188,29 @@
     <h4>Key Legal Concepts: Corwin Cleansing, Disclosure, and Majority Vote</h4>
 
     <p style="margin-top: 15px;"><strong>Corwin Cleansing:</strong></p>
-    <p style="margin-left: 20px;">
+
+    <div class="highlight-quote">
         Under the Delaware Supreme Court's decision in <em>Corwin v. KKR Financial Holdings LLC</em>, when a transaction not subject to the entire fairness standard is approved by a fully informed, uncoerced majority of disinterested stockholders, the business judgment rule applies and the transaction is presumed valid. However, this "cleansing" effect only applies if: (1) the vote was fully informed with proper disclosure of all material facts, (2) the majority was truly disinterested and uncoerced, and (3) no fraud or illegality occurred.
-    </p>
+    </div>
 
     <p style="margin-top: 15px;"><strong>Disclosure Requirements:</strong></p>
-    <p style="margin-left: 20px;">
+
+    <div class="highlight-quote">
         Delaware law requires that stockholders receive full and fair disclosure of all material facts before voting on significant transactions. Material facts include information that a reasonable stockholder would consider important in deciding how to vote, such as conflicts of interest, side compensation to insiders or key stockholders, financial projections, valuation opinions, and the fairness of the consideration. Failure to disclose material facts can invalidate the stockholder vote and eliminate Corwin cleansing protection.
-    </p>
+    </div>
 
     <p style="margin-top: 15px;"><strong>Majority Vote and "Disinterested" Shares:</strong></p>
-    <p style="margin-left: 20px;">
+
+    <div class="highlight-quote">
         For Corwin cleansing to apply, a majority of shares voting must be "disinterested" - meaning held by stockholders who received no side benefits or special consideration beyond their pro rata share of the transaction proceeds. If certain stockholders received undisclosed compensation, employment agreements, or other benefits tied to their affirmative votes, their shares may be deemed "interested" and excluded from the cleansing calculation. The plaintiff alleges that when properly excluding interested votes, the transaction may have failed to achieve the required majority approval.
-    </p>
+    </div>
 
     <h4>The §220 Books and Records Demand</h4>
-    <p>
-        Unable to obtain clear answers through informal requests, plaintiff stockholders filed this §220 action seeking to inspect Solfice's books and records. The goal is to investigate: (1) what compensation was provided to insiders and key stockholders, (2) whether all material facts were disclosed before the stockholder vote, (3) whether conflicts of interest were properly addressed, and (4) whether the transaction actually received approval from a majority of disinterested stockholders as required by Delaware law.
-    </p>
+
+    <div class="key-fact-box">
+        <strong>Purpose of This Litigation:</strong> Unable to obtain clear answers through informal requests, plaintiff stockholders filed this §220 action seeking to inspect Solfice's books and records. The goal is to investigate: (1) what compensation was provided to insiders and key stockholders, (2) whether all material facts were disclosed before the stockholder vote, (3) whether conflicts of interest were properly addressed, and (4) whether the transaction actually received approval from a majority of disinterested stockholders as required by Delaware law.
+    </div>
+
+    </div>
 </body>
 </html>
