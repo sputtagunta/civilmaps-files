@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.8;
+            color: #34495e;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 12px;
+            padding: 35px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        h3 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            font-weight: 700;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 15px;
+        }
+
+        h4 {
+            color: #2c3e50;
+            font-size: 1.3em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h4:before {
+            content: "▸";
+            color: #667eea;
+            font-size: 1.2em;
+        }
+
+        h5 {
+            color: #34495e;
+            font-size: 1.1em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.9;
+        }
+
+        ul {
+            margin-left: 30px;
+            line-height: 1.9;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .highlight-quote {
+            background: linear-gradient(135deg, #fff9e6 0%, #ffe5b3 100%);
+            border-left: 5px solid #f39c12;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-style: italic;
+            color: #2c3e50;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .key-fact-box {
+            background: #e8f4f8;
+            border: 2px solid #3498db;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .key-fact-box strong {
+            color: #3498db;
+            font-size: 1.1em;
+        }
+
+        .email-box {
+            background: #f8f9fa;
+            border: 2px solid #dee2e6;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        .email-header {
+            background: #e9ecef;
+            padding: 10px;
+            margin: -20px -20px 15px -20px;
+            border-radius: 6px 6px 0 0;
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        .email-header strong {
+            color: #495057;
+        }
+
+        .email-body {
+            margin-top: 15px;
+            line-height: 1.7;
+        }
+
+        .thread-indicator {
+            background: #d1ecf1;
+            border-left: 4px solid #0c5460;
+            padding: 10px 15px;
+            margin: 15px 0;
+            font-style: italic;
+            color: #0c5460;
+        }
+
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            margin: 30px 0;
+            border-radius: 2px;
+        }
+
+        .doc-link {
+            display: inline-block;
+            background: #3498db;
+            color: white !important;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: all 0.3s;
+        }
+
+        .doc-link:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .warning-box strong {
+            color: #856404;
+        }
+
+        .critical-box {
+            background: #f8d7da;
+            border: 2px solid #f5c6cb;
+            border-left: 5px solid #dc3545;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .critical-box strong {
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+    <h3>✉️ Complete Email Correspondence with Luminar</h3>
+
+    <p>
+        Following the filing of the Delaware Chancery Court action regarding the Solfice asset sale, plaintiff stockholders initiated direct written communication with Luminar Technologies through multiple channels. This section documents the complete email threads, including all exchanges, responses, and notably, instances where Luminar's counsel refused to confirm or deny factual assertions about the transaction.
+    </p>
+
+    <div class="section-divider"></div>
+
+    <h4>Thread 1: Section 220 Books and Records Demand</h4>
+
+    <p><strong>Timeline:</strong> September 5, 2025 - October 7, 2025</p>
+
+    <h5>Message 1: Initial Section 220 Demand (September 5, 2025)</h5>
+
+    <div class="email-box">
+        <div class="email-header">
+            <strong>From:</strong> Shanmukha Sravan Puttagunta<br>
+            <strong>To:</strong> Corporate Secretary, Luminar Technologies, Inc.<br>
+            <strong>Date:</strong> September 5, 2025<br>
+            <strong>Subject:</strong> Demand for Inspection of Books and Records Under 8 Del. C. § 220
+        </div>
+
+        <div class="email-body">
+            <p>Dear Corporate Secretary,</p>
+
+            <p>I, Shanmukha Sravan Puttagunta, am both a record and beneficial holder of common stock of Luminar Technologies, Inc. ("Luminar" or the "Company"). My ownership of Luminar stock is current, continuous, and sufficient to confer all statutory rights under the Delaware General Corporation Law.</p>
+
+            <p>Pursuant to Section 220, this letter constitutes a formal demand to inspect and copy certain books and records of Luminar. These rights are well established under Delaware law and serve as an important accountability mechanism where there is a credible basis to suspect mismanagement, breaches of fiduciary duty, or failures of disclosure.</p>
+
+            <p><strong>Proper Purpose:</strong> The purpose of this demand is to investigate potential mismanagement, breaches of fiduciary duty, and disclosure violations in connection with Luminar's acquisition of assets from Solfice Research Inc. ("Solfice") via Condor LLC.</p>
+
+            <p>This demand is made in connection with, and to cross-reference disclosures against, the related action pending in the Delaware Court of Chancery, <em>Anuj Gupta v. Safko and Harvey</em>, C.A. No. 2024-1296-SEM, which concerns Solfice fiduciaries' conduct in connection with the same transaction.</p>
+
+            <p><strong>Specific areas of investigation include:</strong></p>
+            <ul>
+                <li>Inducements and Side Payments made to Solfice insiders in exchange for voting consents</li>
+                <li>Staggered Exit Mechanics through Condor Acquisition Sub II</li>
+                <li>Selective Release Waivers imposed on stockholders</li>
+                <li>Seller Release Agreements as closing deliverables</li>
+                <li>Board Oversight Failures by Solfice directors</li>
+            </ul>
+
+            <p>[Full demand letter with detailed document categories - see link to PDF]</p>
+
+            <p>Respectfully submitted,<br>
+            Shanmukha Sravan Puttagunta</p>
+        </div>
+    </div>
+
+    <h5>Message 2: Luminar's Rejection (September 23, 2025)</h5>
+
+    <div class="email-box">
+        <div class="email-header">
+            <strong>From:</strong> M. Todd Scott, Orrick, Herrington & Sutcliffe LLP<br>
+            <strong>To:</strong> Shanmukha Puttagunta<br>
+            <strong>Date:</strong> September 23, 2025<br>
+            <strong>Subject:</strong> Re: Inspection Demand on Luminar Technologies, Inc.
+        </div>
+
+        <div class="email-body">
+            <p>Dear Mr. Puttagunta,</p>
+
+            <p>We represent Luminar Technologies, Inc. ("Luminar" or the "Company") with regard to your September 5, 2025 stockholder inspection demand under 8 Del C. § 220. The Demand concerns Luminar's 2024 "acquisition of assets from Solfice Research Inc. ("Solfice") via Condor LLA," and is "made in connection with, and to cross-reference disclosures against, the related action pending in the Delaware Court of Chancery, <em>Anuj Gupta v. Safka and Harvey</em>, C.A. No. 2024-1296-SEM."</p>
+
+            <p>In short, you seek documents from Luminar to advance your ongoing claims in the Gupta litigation, and only recently purchased three shares in Luminar in order to bring the Demand.</p>
+
+            <p><strong>The Demand, however, does not satisfy the requirements of 8 Del C. § 220 ("Section 220"), and must be rejected for two independent reasons:</strong></p>
+
+            <p><strong>First</strong>, the Demand does not articulate a proper purpose for inspection. Your stated purpose is "unrelated to the [your] purpose as a stockholder" of Luminar and concerns your interests as a stockholder of Solfice, and your ongoing litigation against Solfice and its insiders. Section 220 is "not a way to circumvent discovery proceedings" in ongoing litigation.</p>
+
+            <p><strong>Second</strong>, to the extent you maintain the Demand seeks to investigate purported wrongdoing by Luminar, the Demand must be rejected because it does not provide a credible basis to suggest that Luminar did anything wrong. The Demand does not even suggest that Luminar or its insiders committed any wrongdoing in connection with the acquisition of assets from Solfice (or otherwise).</p>
+
+            <p>Regards,<br>
+            M. Todd Scott</p>
+        </div>
+    </div>
+
+    <h5>Message 3: Stockholder's Comprehensive Response (September 23, 2025)</h5>
+
+    <div class="email-box">
+        <div class="email-header">
+            <strong>From:</strong> Sravan Puttagunta<br>
+            <strong>To:</strong> M. Todd Scott, Orrick<br>
+            <strong>Cc:</strong> Delaware Court of Chancery, Register in Chancery (courtesy copy)<br>
+            <strong>Date:</strong> September 23, 2025<br>
+            <strong>Subject:</strong> Response to Rejection of § 220 Demand — Comprehensive Analysis of Luminar's Custodial Obligations and Liability Exposure in Project Condor
+        </div>
+
+        <div class="email-body">
+            <p>Counsel,</p>
+
+            <p>I write in response to your September 23, 2025 letter rejecting my demand under 8 Del. C. § 220. Your response reveals either a fundamental misunderstanding of Delaware's books-and-records jurisprudence or a deliberate attempt to obfuscate Luminar's clear custodial obligations and potential liability exposure.</p>
+
+            <p><strong>Your letter's central premise—that these are "Solfice's records" rather than Luminar's—ignores established Delaware precedent on acquirer custody, the practical realities of M&A closing mechanics, and the specific admissions already made by Solfice's counsel that these materials are "parked with the buyer."</strong></p>
+
+            <div class="critical-box">
+                <strong>KEY POINTS RAISED IN 21-PAGE RESPONSE:</strong>
+                <ul>
+                    <li><strong>Custodial Framework:</strong> Luminar is the custodian of Project Condor closing materials as a matter of M&A practice and Delaware law</li>
+                    <li><strong>Valuation Manipulation:</strong> Suspicious price reduction from $20M+ to $10M coinciding with consent issues</li>
+                    <li><strong>Inducement Structure:</strong> Employment agreements creating Fliegler conflicts</li>
+                    <li><strong>§228(e) Compliance:</strong> Missing statutory notice documentation</li>
+                    <li><strong>Aiding and Abetting:</strong> Luminar's potential liability under Rural Metro</li>
+                    <li><strong>Nine Document Categories:</strong> Detailed with granular specificity</li>
+                    <li><strong>Criminal Implications:</strong> Mail/wire fraud potential</li>
+                    <li><strong>SEC Reporting Issues:</strong> Material disclosure deficiencies</li>
+                </ul>
+            </div>
+
+            <p><strong>The Valuation Manipulation Pattern:</strong></p>
+            <ul>
+                <li><strong>May 2022:</strong> Luminar's initial indication valued Solfice at $20-22 million</li>
+                <li><strong>Late May 2022:</strong> Seller's counsel communicated inability to secure founder cooperation (47% common stake)</li>
+                <li><strong>June 2022:</strong> Luminar's offer mysteriously drops to $10-12 million—a 50% reduction</li>
+                <li><strong>June-July 2022:</strong> Employment agreements and special compensation arrangements begin appearing for insiders totaling millions—effectively restoring value extracted from headline price</li>
+            </ul>
+
+            <p><strong>I hereby demand that Luminar produce the requested documents within ten (10) business days.</strong> If Luminar refuses or fails to respond within ten business days, I will immediately petition the Chancery Court for relief.</p>
+
+            <p>[Full 21-page comprehensive legal analysis - see link to PDF]</p>
+
+            <p>Very truly yours,<br>
+            Sravan Puttagunta<br>
+            Luminar Stockholder</p>
+        </div>
+    </div>
+
+    <div class="critical-box">
+        <strong>Critical Issue: Non-Response to Factual Assertions</strong><br>
+        Note that Puttagunta's September 23 response includes specific factual allegations about:
+        <ul>
+            <li>The $20M+ initial valuation reducing to $10M</li>
+            <li>Timing correlation with consent issues</li>
+            <li>Employment agreements as closing conditions</li>
+            <li>Missing §228(e) documentation</li>
+            <li>The $800,000 inducement offer</li>
+        </ul>
+        <strong>Luminar's counsel never confirms or denies any of these factual assertions in subsequent correspondence.</strong>
+    </div>
+
+    <h5>Message 4: Luminar's Second Rejection (October 7, 2025)</h5>
+
+    <div class="email-box">
+        <div class="email-header">
+            <strong>From:</strong> M. Todd Scott, Orrick, Herrington & Sutcliffe LLP<br>
+            <strong>To:</strong> Shanmukha Puttagunta<br>
+            <strong>Date:</strong> October 7, 2025<br>
+            <strong>Subject:</strong> Re: Inspection Demand on Luminar Technologies, Inc.
+        </div>
+
+        <div class="email-body">
+            <p>Dear Mr. Puttagunta,</p>
+
+            <p>We write on behalf of Luminar Technologies, Inc. ("Luminar" or the "Company") with reference to your September 5, 2025 stockholder inspection demand under 8 Del C. § 220 (the "Demand"). As you know, Luminar rejected the Demand in a letter dated September 23, 2025 (the "Rejection Letter"), because the Demand does not comport with the requirements of 8 Del C. § 220 ("Section 220").</p>
+
+            <p>In a follow-up letter dated September 23, 2025 (the "Demand Follow-Up"), <strong>you falsely assert that Luminar rejected the Demand because, purportedly, "Luminar lacks custody" of the documents you seek.</strong> In reality, as the Rejection Letter made plain, the Demand was rejected because it "concerns your interests as a stockholder of Solfice [Research Inc.], and your ongoing litigation against Solfice and its insiders."</p>
+
+            <p>In the Demand Follow-Up you now speculate that Luminar representatives might face "aiding-and-abetting liability for transaction counterparties [at Solfice] who knowingly participate[d] in fiduciary breaches." Citing to what you call a "suspicious valuation trajectory" and purported "documentary evidence" that is not quoted in or attached to your correspondence, you assert there is a credible basis to infer wrongdoing by Luminar representatives.</p>
+
+            <p><strong>But you do not cite any facts to support that conclusory claim, and the Company is well within its rights to "deny requests for inspection … that are based only upon suspicion."</strong></p>
+
+            <p><strong>It is clear on the face of your Demand that the purpose for your inspection is "not reasonably related to [your] interest as a stockholder" of Luminar, and the Company is under no obligation, will not, engage any further with you on this matter.</strong></p>
+
+            <p>Finally, we note that even if the Demand complied with the requirements of Section 220, and it does not, the voluminous deal documents you seek are not available for inspection under the statute, which was recently amended to limit the scope of document stockholders can review.</p>
+
+            <p>Regards,<br>
+            M. Todd Scott</p>
+        </div>
+    </div>
+
+    <div class="critical-box">
+        <strong>Notable Pattern: Refusal to Engage on Substance</strong><br>
+        Luminar's counsel:
+        <ul>
+            <li>✗ Does NOT deny the valuation dropped from $20M+ to $10M</li>
+            <li>✗ Does NOT deny employment agreements were closing conditions</li>
+            <li>✗ Does NOT deny the timing correlation with consent issues</li>
+            <li>✗ Does NOT deny missing §228(e) documentation</li>
+            <li>✗ Does NOT provide any contrary evidence</li>
+            <li>✓ Simply states "will not engage any further" without addressing substance</li>
+        </ul>
+        <strong>This refusal to confirm or deny creates adverse inferences under Delaware law.</strong>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <h4>Thread 2: Notice of Material Disclosure Obligation</h4>
+
+    <p><strong>Timeline:</strong> October 31, 2025 - November 3, 2025</p>
+
+    <h5>Message 1: Initial Notice (October 31, 2025, 10:31 PM)</h5>
+
+    <div class="email-box">
+        <div class="email-header">
+            <strong>From:</strong> Sravan Puttagunta &lt;sravan.puttagunta@gmail.com&gt;<br>
+            <strong>To:</strong> Anuj Gupta, Jason Creadore, Alex Talarides, M. Todd Scott (Orrick)<br>
+            <strong>Date:</strong> Friday, October 31, 2025, 10:31 PM<br>
+            <strong>Subject:</strong> Notice of Material Disclosure Obligation Re: Tainted Asset Title
+        </div>
+
+        <div class="email-body">
+            <p><strong>Dear Luminar Counsel,</strong></p>
+
+            <p>This communication puts you on formal notice that the asset referred to internally as "Project Condor" may be subject to rescission, constructive trust, and/or injunctive relief due to an invalid vote under 8 Del. C. §271, compounded by:</p>
+
+            <ul>
+                <li>Selective and undisclosed inducements offered to stockholders in exchange for their consent,</li>
+                <li>The refusal of fiduciaries to provide written disclosure to at least 40% of the voting block.</li>
+            </ul>
+
+            <p>These matters are currently the subject of a pending books and records action in the Delaware Court of Chancery, which may result in the invalidation of the transaction and a follow-on plenary action seeking rescissory damages and disgorgement.</p>
+
+            <p><strong>As a result, any contemplated sale, transfer, assignment, or hypothecation of the underlying IP, assets, or derivative interests must include full written disclosure of:</strong></p>
+
+            <ul>
+                <li>The disputed validity of the underlying asset sale,</li>
+                <li>The possibility of injunctive or clawback actions,</li>
+                <li>And the taint surrounding both stockholder inducements and board-level conduct.</li>
+            </ul>
+
+            <p>Failure to disclose such risks to a prospective acquirer or creditor may constitute securities fraud, negligent misrepresentation, or a breach of duty—particularly under applicable SEC rules (17 CFR §240.10b-5), and under Delaware's standards for equitable notice in asset transactions.</p>
+
+            <p><strong>You are required to preserve all documentation, communications, and transaction materials related to:</strong></p>
+
+            <ul>
+                <li>Board consents and 228(e) notices from June 2022</li>
+                <li>Any closing deliverables tied to compensation or releases</li>
+                <li>Communications involving employment agreements, inducement grants, or buyer-side due diligence</li>
+            </ul>
+
+            <p>We reserve all rights.</p>
+
+            <p>Sincerely,<br>
+            Sravan Puttagunta</p>
+        </div>
+    </div>
+
+    <h5>Message 2: Counsel's Response (November 1, 2025, 11:07 AM)</h5>
+
+    <div class="email-box">
+        <div class="email-header">
+            <strong>From:</strong> M. Todd Scott &lt;tscott@orrick.com&gt;<br>
+            <strong>To:</strong> Puttagunta Sravan<br>
+            <strong>Cc:</strong> Gupta Anuj, Creadore Jason, Talarides Alex<br>
+            <strong>Date:</strong> Saturday, November 1, 2025, 11:07 AM
+        </div>
+
+        <div class="email-body">
+            <p>Mr. Puttagunta, I do not represent Luminar in this regard. You will need to contact the company directly.</p>
+
+            <p>Best,<br>
+            Todd</p>
+        </div>
+    </div>
+
+    <div class="warning-box">
+        <strong>Notable:</strong> Counsel does not deny any of the factual assertions about:
+        <ul>
+            <li>Invalid vote under §271</li>
+            <li>Undisclosed inducements</li>
+            <li>Failure to provide disclosure to 40% of voting block</li>
+            <li>Tainted asset title</li>
+        </ul>
+        Instead, simply states he doesn't represent Luminar "in this regard" without clarification of what that means.
+    </div>
+
+    <h5>Message 3: Request for Contact (November 1, 2025, 11:15 AM)</h5>
+
+    <div class="email-box">
+        <div class="email-header">
+            <strong>From:</strong> Sravan Puttagunta<br>
+            <strong>To:</strong> M. Todd Scott<br>
+            <strong>Cc:</strong> Gupta Anuj, Creadore Jason, Talarides Alex<br>
+            <strong>Date:</strong> Saturday, November 1, 2025, 11:15 AM
+        </div>
+
+        <div class="email-body">
+            <p>Can you please provide me the appropriate point of contact?</p>
+
+            <p>Kind regards, Sravan</p>
+        </div>
+    </div>
+
+    <div class="thread-indicator">
+        No response was received to this request for the appropriate point of contact.
+    </div>
+
+    <h5>Message 4: Direct Notice to Luminar (November 1, 2025, 11:23 AM)</h5>
+
+    <div class="email-box">
+        <div class="email-header">
+            <strong>From:</strong> Sravan Puttagunta<br>
+            <strong>To:</strong> Anuj Gupta, Jason Creadore, Alex Talarides, M. Todd Scott, investors@luminartech.com, corpsec@luminartech.com, boardofdirectors@luminartech.com<br>
+            <strong>Date:</strong> Saturday, November 1, 2025, 11:23 AM
+        </div>
+
+        <div class="email-body">
+            <p>Forwarding notice to potential stakeholders.</p>
+
+            <p>Kind regards, Sravan</p>
+
+            <p>[Original message quoted]</p>
+        </div>
+    </div>
+
+    <div class="key-fact-box">
+        <strong>Significance:</strong> After counsel declined to engage, Puttagunta escalated by sending the notice directly to Luminar's investor relations, corporate secretary, and board of directors email addresses. This creates a clear record that Luminar's leadership was formally notified of the disputed ownership claims and disclosure obligations.
+    </div>
+
+    <div class="section-divider"></div>
+
+    <h4>Thread 3: Formal Notice of Disputed Ownership and Creditor Rights</h4>
+
+    <p><strong>Timeline:</strong> November 1, 2025 - November 3, 2025</p>
+
+    <h5>Message 1: Initial Notice of Disputed Ownership (November 1, 2025, 10:08 AM)</h5>
+
+    <div class="email-box">
+        <div class="email-header">
+            <strong>From:</strong> Sravan Puttagunta &lt;sravan.puttagunta@gmail.com&gt;<br>
+            <strong>To:</strong> Anuj Gupta, Jason Creadore, M. Todd Scott, Alex Talarides<br>
+            <strong>Date:</strong> Saturday, November 1, 2025, 10:08 AM<br>
+            <strong>Subject:</strong> Formal Notice of Disputed Ownership and Creditor Rights — Project Condor Assets
+        </div>
+
+        <div class="email-body">
+            <p><strong>To the General Counsel and Board of Directors of Luminar Technologies, Inc.:</strong></p>
+
+            <p>I am writing to formally notify you that I am asserting an equitable, contractual, and fiduciary interest in the intellectual property and other assets originally developed by Solfice Research, Inc., and purportedly transferred via "Project Condor" to Luminar Technologies, Inc.</p>
+
+            <h5 style="color: #721c24; margin-top: 20px;">Disputed Ownership — Invalid §271 Transaction</h5>
+
+            <p>As detailed in C.A. No. 2024-1296-SEM (Delaware Chancery), I have provided:</p>
+
+            <p>A sworn affidavit and supporting exhibits establishing that the asset sale to Luminar was not validly approved under 8 Del. C. §271, due to:</p>
+
+            <ul>
+                <li>Inducement offers and vote coercion;</li>
+                <li>Material non-disclosure to 40%+ of stockholders;</li>
+                <li>Incomplete and selective dissemination of the APA and compensation schedules;</li>
+                <li>Use of post hoc board appointment and unsigned consents;</li>
+                <li><strong>The offer made to me personally of an $800,000 inducement package in exchange for a proxy vote (which I refused).</strong></li>
+            </ul>
+
+            <p>As such, the transaction may be rescinded, and your continued assertion of ownership over those assets may constitute unlawful possession and unjust enrichment.</p>
+
+            <h5 style="color: #721c24; margin-top: 20px;">Preservation of Rights in Bankruptcy and M&A Contexts</h5>
+
+            <p>You are hereby notified that:</p>
+
+            <ol>
+                <li>Any attempted sale, transfer, or assignment of the disputed Solfice assets, including via a 363 bankruptcy sale or "strategic alternative," will be met with formal legal objection and claims for constructive trust and rescissory relief;</li>
+
+                <li>I am asserting rights as a:
+                    <ul>
+                        <li>Pre-transaction stockholder of Solfice Research, Inc.;</li>
+                        <li>Creditor and potential judgment beneficiary of any equitable relief or disgorgement remedy;</li>
+                        <li>Interested party with standing to challenge transfer or discharge in any bankruptcy proceeding or merger-related documentation;</li>
+                    </ul>
+                </li>
+
+                <li>If Luminar or its successors proceed with any transaction without disclosing the ownership dispute, pending litigation, or regulatory scrutiny, such conduct will be deemed:
+                    <ul>
+                        <li>Materially misleading under SEC Rule 10b‑5;</li>
+                        <li>A fraudulent transfer under U.S. Bankruptcy Code §548;</li>
+                        <li>Grounds for equitable subordination or clawback under §§547–550.</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h5 style="color: #721c24; margin-top: 20px;">Demand for Noticing and Preservation</h5>
+
+            <p>Accordingly, I request that:</p>
+
+            <ul>
+                <li>I be added to any noticing list for upcoming restructuring, bankruptcy, asset sales, or public company disclosures;</li>
+                <li>You immediately preserve all documents and communications relating to Project Condor, RSU schedules, APA amendments, board consents, and any compensation paid or promised to Solfice insiders;</li>
+                <li>You confirm that any CIM, teaser, or dataroom issued to potential acquirers now reflects the contested title and ongoing Delaware litigation.</li>
+            </ul>
+
+            <p>This letter is issued without waiver of any rights and shall not be construed as acceptance of any transaction, jurisdiction, or settlement position.</p>
+
+            <p>Sincerely,</p>
+            <p>Sravan Puttagunta<br>
+            Stockholder, Solfice Research, Inc<br>
+            Sravan.puttagunta@gmail.com<br>
+            415-710-2791</p>
+        </div>
+    </div>
+
+    <div class="critical-box">
+        <strong>Key Disclosure: $800,000 Inducement Offer</strong><br>
+        This is the first formal written correspondence where Puttagunta explicitly states the amount of the personal inducement offer: <strong>$800,000</strong>. This provides concrete detail about the alleged vote-buying scheme and establishes personal, firsthand knowledge of the misconduct. The fact that this specific dollar amount is never challenged or denied by Luminar is legally significant.
+    </div>
+
+    <div class="thread-indicator">
+        No response was received from Luminar counsel or corporate officers to this notice of disputed ownership.
+    </div>
+
+    <h5>Message 2: Forwarding for Broader Distribution (November 3, 2025, 10:56 PM)</h5>
+
+    <div class="email-box">
+        <div class="email-header">
+            <strong>From:</strong> Sravan Puttagunta<br>
+            <strong>To:</strong> Anuj Gupta, Jason Creadore, M. Todd Scott, Alex Talarides, investors@luminartech.com, boardofdirectors@luminartech.com, corpsec@luminartech.com<br>
+            <strong>Date:</strong> Monday, November 3, 2025, 10:56 PM
+        </div>
+
+        <div class="email-body">
+            <p>Forwarding for reference.</p>
+
+            <p>Kind regards, Sravan</p>
+
+            <p>[Original message quoted]</p>
+        </div>
+    </div>
+
+    <div class="thread-indicator">
+        No response was received from any Luminar representative to this forwarded notice.
+    </div>
+
+    <div class="section-divider"></div>
+
+    <h4>Legal and Strategic Significance of the Complete Correspondence</h4>
+
+    <h5>Pattern of Non-Engagement on Factual Assertions</h5>
+
+    <p>Across all three correspondence threads, a clear pattern emerges:</p>
+
+    <div class="warning-box">
+        <strong>Factual Assertions Made by Stockholder (NEVER Denied by Luminar):</strong>
+        <ul>
+            <li>✗ Valuation dropped from $20M+ to $10M in June 2022</li>
+            <li>✗ Timing correlation between price reduction and consent issues</li>
+            <li>✗ Employment agreements were closing conditions under APA §7.2(e)</li>
+            <li>✗ Missing §228(e) statutory notice documentation</li>
+            <li>✗ Material non-disclosure to 40%+ of stockholders</li>
+            <li>✗ $800,000 inducement offer made to plaintiff</li>
+            <li>✗ "Document parking" with buyer (admitted by Solfice counsel)</li>
+            <li>✗ Invalid §271 stockholder approval</li>
+            <li>✗ Tainted asset title</li>
+        </ul>
+
+        <p style="margin-top: 15px;"><strong>Luminar's Responses:</strong></p>
+        <ul>
+            <li>"I do not represent Luminar in this regard"</li>
+            <li>"Will not engage any further with you on this matter"</li>
+            <li>"Based only upon suspicion"</li>
+            <li>[Complete silence on substance]</li>
+        </ul>
+    </div>
+
+    <h5>Legal Implications Under Delaware Law</h5>
+
+    <p>Delaware courts recognize several adverse inference doctrines that apply to this pattern:</p>
+
+    <ol>
+        <li><strong>Consciousness of Guilt:</strong> Refusal to respond to specific factual allegations, when within the party's knowledge, permits an inference that the allegations are true. <em>See Weinberger v. UOP, Inc.</em>, 457 A.2d 701 (Del. 1983).</li>
+
+        <li><strong>Judicial Admissions by Silence:</strong> When one party makes specific factual assertions in correspondence and the other party fails to deny them despite opportunity and obligation to do so, the court may treat the assertions as admitted. <em>See Merritt v. United Parcel Service</em>, 956 A.2d 1196 (Del. 2008).</li>
+
+        <li><strong>Empty Chair Inference:</strong> When a party refuses to produce documents or engage with allegations, the court may infer that production would reveal unfavorable facts. <em>See Fitzgerald v. Cantor</em>, 1998 WL 842316 (Del. Ch. 1998).</li>
+
+        <li><strong>Spoliation Concerns:</strong> The absence of routine transaction documents (§228(e) mailing records, closing deliverables) combined with refusal to address their absence raises spoliation concerns. <em>See Beard Research, Inc. v. Kates</em>, 981 A.2d 1175 (Del. Ch. 2009).</li>
+    </ol>
+
+    <h5>Creating the Documentary Record</h5>
+
+    <div class="key-fact-box">
+        <strong>Strategic Purpose of Multiple Notices:</strong> By sending three separate formal notices through different channels (Section 220 demand, material disclosure warning, disputed ownership notice) to multiple recipients (counsel, board, corporate officers), the plaintiff created a comprehensive documentary record establishing:
+
+        <ol style="margin-top: 10px;">
+            <li><strong>Actual Notice:</strong> Luminar cannot claim ignorance of the disputed ownership, approval defects, or disclosure obligations</li>
+            <li><strong>Preservation Trigger:</strong> Formal document preservation obligations attached, making any subsequent destruction potentially spoliation</li>
+            <li><strong>Disclosure Obligations:</strong> SEC reporting requirements triggered for material contingent liabilities</li>
+            <li><strong>Knowledge Element:</strong> For aiding-and-abetting claims, scienter is established through documented notice</li>
+            <li><strong>Bad Faith Evidence:</strong> Refusal to engage despite multiple opportunities demonstrates bad faith for fee-shifting purposes</li>
+        </ol>
+    </div>
+
+    <h5>Escalating Pattern of Legal Notification</h5>
+
+    <p>The correspondence demonstrates a deliberate escalation strategy:</p>
+
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <tr style="background: #e9ecef;">
+            <th style="padding: 10px; border: 1px solid #dee2e6;">Date</th>
+            <th style="padding: 10px; border: 1px solid #dee2e6;">Communication</th>
+            <th style="padding: 10px; border: 1px solid #dee2e6;">Legal Theory</th>
+            <th style="padding: 10px; border: 1px solid #dee2e6;">Response</th>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #dee2e6;">Sept 5</td>
+            <td style="padding: 10px; border: 1px solid #dee2e6;">§220 Demand</td>
+            <td style="padding: 10px; border: 1px solid #dee2e6;">Stockholder inspection rights</td>
+            <td style="padding: 10px; border: 1px solid #dee2e6;">Rejected (Sept 23)</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #dee2e6;">Sept 23</td>
+            <td style="padding: 10px; border: 1px solid #dee2e6;">21-page response</td>
+            <td style="padding: 10px; border: 1px solid #dee2e6;">Custody, valuation fraud, inducements</td>
+            <td style="padding: 10px; border: 1px solid #dee2e6;">"Will not engage further" (Oct 7)</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #dee2e6;">Oct 31</td>
+            <td style="padding: 10px; border: 1px solid #dee2e6;">Material disclosure notice</td>
+            <td style="padding: 10px; border: 1px solid #dee2e6;">Securities fraud, tainted title</td>
+            <td style="padding: 10px; border: 1px solid #dee2e6;">"Don't represent Luminar" (Nov 1)</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #dee2e6;">Nov 1</td>
+            <td style="padding: 10px; border: 1px solid #dee2e6;">Disputed ownership</td>
+            <td style="padding: 10px; border: 1px solid #dee2e6;">Invalid §271, bankruptcy rights</td>
+            <td style="padding: 10px; border: 1px solid #dee2e6;">[No response]</td>
+        </tr>
+    </table>
+
+    <h5>Impact on Subsequent Litigation</h5>
+
+    <p>This correspondence record provides critical foundation for multiple claims:</p>
+
+    <ul>
+        <li><strong>§220 Enforcement Action:</strong> Clear refusal to produce documents despite proper demand</li>
+        <li><strong>Securities Fraud Claims:</strong> Notice of disclosure deficiencies triggering duty to correct</li>
+        <li><strong>Aiding and Abetting:</strong> Knowledge element established through formal notices</li>
+        <li><strong>Constructive Trust:</strong> Assertion of equitable interest in disputed assets</li>
+        <li><strong>Fraudulent Transfer:</strong> Notice to Luminar before any asset sale or bankruptcy</li>
+        <li><strong>Bad Faith Fee-Shifting:</strong> Multiple opportunities to engage refused</li>
+        <li><strong>Spoliation Claims:</strong> Preservation demands establishing duty</li>
+    </ul>
+
+    <h5>Strategic Timing and Luminar's Financial Distress</h5>
+
+    <p>The October-November timing of the notices coincides with:</p>
+
+    <ul>
+        <li>Luminar's deteriorating financial position (documented in SEC filings)</li>
+        <li>Market speculation about potential bankruptcy or strategic alternatives</li>
+        <li>The need to establish creditor rights before any Chapter 11 filing</li>
+        <li>The importance of perfecting claims to Project Condor assets before disposition</li>
+    </ul>
+
+    <p>By formally asserting disputed ownership and demanding inclusion in noticing procedures, the plaintiff positioned himself to challenge any subsequent transactions involving the Project Condor assets, whether through bankruptcy sale, merger, or other disposition.</p>
+
+    <div class="key-fact-box">
+        <strong>The Unanswered $800,000 Question:</strong><br>
+        The single most significant fact in all the correspondence is Puttagunta's sworn statement that he was offered an <strong>$800,000 inducement package</strong> in exchange for his proxy vote, which he refused. This assertion has been made:
+        <ul>
+            <li>In the September 23 demand</li>
+            <li>In the November 1 disputed ownership notice</li>
+            <li>In sworn affidavits filed with the Delaware Chancery Court</li>
+        </ul>
+        <strong>Luminar has never denied this allegation.</strong> Under Delaware law, this failure to deny when within Luminar's knowledge and when there is both opportunity and obligation to respond creates a strong inference that the allegation is true.
+    </div>
+
+    </div>
+</body>
+</html>
