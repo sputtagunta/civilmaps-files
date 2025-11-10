@@ -82,25 +82,91 @@
             border-bottom-color: #3498db;
         }
 
+        /* Hamburger Menu Button */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 10px;
+            background: none;
+            border: none;
+            z-index: 1001;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: #ecf0f1;
+            margin: 3px 0;
+            transition: all 0.3s ease;
+            border-radius: 3px;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
         @media (max-width: 968px) {
             .nav-container {
-                flex-direction: column;
-                padding: 10px;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 15px;
             }
 
             .nav-title {
-                padding: 10px 0;
+                padding: 0;
+                font-size: 1.1em;
+            }
+
+            .hamburger {
+                display: flex;
             }
 
             .nav-menu {
-                flex-wrap: wrap;
-                justify-content: center;
+                display: none;
+                position: fixed;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background: #2c3e50;
+                flex-direction: column;
                 width: 100%;
+                max-height: calc(100vh - 60px);
+                overflow-y: auto;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                z-index: 1000;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-menu li {
+                width: 100%;
+                border-bottom: 1px solid #34495e;
             }
 
             .nav-menu a {
-                padding: 12px 15px;
-                font-size: 0.85em;
+                padding: 15px 20px;
+                font-size: 1em;
+                border-bottom: none;
+                text-align: left;
+            }
+
+            .nav-menu a:hover,
+            .nav-menu a.active {
+                background: #34495e;
+                border-bottom: none;
+                border-left: 4px solid #3498db;
             }
         }
 
@@ -1586,7 +1652,12 @@
     <nav class="nav-bar">
         <div class="nav-container">
             <div class="nav-title">Civil Maps Files</div>
-            <ul class="nav-menu">
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#overview" class="nav-link active" data-section="overview">Overview</a></li>
                 <li><a href="#background" class="nav-link" data-section="background">Background</a></li>
                 <li><a href="#evidence" class="nav-link" data-section="evidence">Evidence</a></li>
@@ -2943,6 +3014,8 @@
         document.addEventListener('DOMContentLoaded', function() {
             const navLinks = document.querySelectorAll('.nav-link');
             const sections = document.querySelectorAll('.content-section');
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
 
             // Function to show a specific section
             function showSection(sectionId) {
@@ -2972,7 +3045,13 @@
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
 
-            // Add click event listeners to nav links
+            // Hamburger menu toggle
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            // Close menu when clicking on a nav link (mobile)
             navLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -2981,7 +3060,24 @@
 
                     // Update URL hash without scrolling
                     history.pushState(null, null, `#${sectionId}`);
+
+                    // Close mobile menu after clicking
+                    if (window.innerWidth <= 968) {
+                        hamburger.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    }
                 });
+            });
+
+            // Close menu when clicking outside (mobile)
+            document.addEventListener('click', function(e) {
+                if (window.innerWidth <= 968 &&
+                    !navMenu.contains(e.target) &&
+                    !hamburger.contains(e.target) &&
+                    navMenu.classList.contains('active')) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
             });
 
             // Handle initial hash on page load
