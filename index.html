@@ -234,6 +234,7 @@
             border-radius: 4px;
             background: white;
             overflow: hidden;
+            display: block;
         }
 
         .iframe-container {
@@ -389,6 +390,30 @@
             margin-right: 5px;
         }
 
+        .doc-abstract {
+            font-size: 0.85em;
+            color: #7f8c8d;
+            margin-top: 5px;
+            padding-left: 25px;
+            line-height: 1.5;
+        }
+
+        .evidence-tag {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-left: 5px;
+            margin-top: 3px;
+        }
+
+        .evidence-tag:first-of-type {
+            margin-left: 8px;
+        }
+
         .badge {
             display: inline-block;
             background: #e74c3c;
@@ -432,6 +457,860 @@
                 margin-left: 0;
             }
         }
+
+        /* TL;DR Hero Card Styles */
+        .tldr-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .tldr-header h1 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border: none;
+        }
+
+        .case-number {
+            font-size: 1.1em;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .status-date {
+            font-size: 0.95em;
+            opacity: 0.8;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .tldr-summary {
+            background: white;
+            color: #2c3e50;
+            border-radius: 8px;
+            padding: 30px;
+            margin: 20px 0;
+        }
+
+        .tldr-summary h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border: none;
+            padding: 0;
+        }
+
+        .headline {
+            font-size: 1.15em;
+            line-height: 1.7;
+            color: #34495e;
+            font-weight: 500;
+            margin-bottom: 25px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+        }
+
+        .tldr-bullets {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .bullet-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .bullet-section h3 {
+            color: #2c3e50;
+            font-size: 1.2em;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .bullet-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .bullet-section li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        .bullet-section li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .next-steps {
+            background: rgba(255,255,255,0.15);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid white;
+            margin-top: 20px;
+        }
+
+        /* Simple Story Styles */
+        .simple-story {
+            margin-top: 30px;
+        }
+
+        .story-step {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #3498db;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: 700;
+            box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+        }
+
+        .step-content h3 {
+            color: #2c3e50;
+            font-size: 1.3em;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .step-content p {
+            color: #34495e;
+            line-height: 1.7;
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        .simple-explain {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #f39c12;
+            font-style: italic;
+            color: #7f6b00;
+            margin-top: 12px;
+        }
+
+        .why-matters-simple {
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .why-matters-simple h3 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .matters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .matter-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .matter-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .matter-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .matter-card h4 {
+            color: #2c3e50;
+            font-size: 1.2em;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .matter-card p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        .next-steps-simple {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid white;
+            margin-top: 25px;
+            line-height: 1.7;
+        }
+
+        /* Authority Anchors */
+        .authority-anchors {
+            background: #ecf0f1;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        .authority-anchors h3 {
+            color: #2c3e50;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .anchor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .anchor-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .anchor-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .anchor-card h4 {
+            color: #2c3e50;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+
+        .anchor-card p {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 12px;
+        }
+
+        .anchor-card a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.2s;
+        }
+
+        .anchor-card a:hover {
+            color: #2980b9;
+        }
+
+        /* Visualizations */
+        .visualization-section {
+            background: #f8f9fa;
+            border-left: 4px solid #9b59b6;
+            padding: 30px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+        }
+
+        .visualization-section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #9b59b6;
+        }
+
+        .viz-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-top: 25px;
+        }
+
+        .viz-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .viz-card h3 {
+            color: #9b59b6;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+
+        .money-flow, .vote-breakdown {
+            margin-top: 15px;
+        }
+
+        .flow-item, .vote-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 3px solid #9b59b6;
+        }
+
+        .flow-label, .vote-label {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .flow-amount, .vote-percent {
+            font-size: 1.1em;
+            color: #9b59b6;
+            font-weight: bold;
+        }
+
+        .viz-note {
+            margin-top: 15px;
+            padding: 12px;
+            background: #fff3cd;
+            border-left: 3px solid #ffc107;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #856404;
+        }
+
+        /* Killer Excerpts */
+        .killer-excerpts {
+            margin-bottom: 40px;
+        }
+
+        .killer-excerpts h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .excerpt-card {
+            background: #fff9f0;
+            border-left: 4px solid #e67e22;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .excerpt-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .excerpt-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .excerpt-source {
+            font-size: 0.85em;
+            color: #7f8c8d;
+            background: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+        }
+
+        .excerpt-quote {
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+            font-style: italic;
+            color: #34495e;
+            line-height: 1.7;
+            margin: 15px 0;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .excerpt-context {
+            color: #555;
+            line-height: 1.6;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .excerpt-context strong {
+            color: #e67e22;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            margin-bottom: 40px;
+        }
+
+        .comparison-table h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #16a085;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+        }
+
+        .three-column-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .three-column-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.05em;
+        }
+
+        .three-column-table td {
+            padding: 15px;
+            border-bottom: 1px solid #ecf0f1;
+            vertical-align: top;
+            line-height: 1.6;
+        }
+
+        .three-column-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .three-column-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .table-category {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        /* Evidentiary Section Styles */
+        .evidentiary-section {
+            background: #f8f9fa;
+            border-left: 4px solid #e74c3c;
+            padding: 40px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+        }
+
+        .evidentiary-section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+        .evidence-intro {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #e67e22;
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+
+        .clause-card {
+            background: white;
+            border-radius: 12px;
+            padding: 35px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .clause-card.primary-evidence {
+            border: 3px solid #e74c3c;
+        }
+
+        .clause-header {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 15px;
+        }
+
+        .clause-badge {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+
+        .clause-header h3 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin: 10px 0 0 0;
+        }
+
+        .clause-citation {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-size: 0.95em;
+        }
+
+        .clause-citation strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .clause-citation a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .clause-citation a:hover {
+            color: #c0392b;
+        }
+
+        .clause-text {
+            margin: 25px 0;
+        }
+
+        .clause-label {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 1.05em;
+            margin-bottom: 10px;
+        }
+
+        .clause-text blockquote {
+            background: #fff9e6;
+            border-left: 5px solid #f39c12;
+            padding: 25px;
+            margin: 15px 0;
+            font-size: 1.05em;
+            line-height: 1.8;
+            font-style: italic;
+            color: #34495e;
+            border-radius: 6px;
+        }
+
+        .legal-analysis {
+            margin-top: 30px;
+        }
+
+        .legal-analysis h4 {
+            color: #2c3e50;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .analysis-point {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .point-number {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            background: #3498db;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+
+        .point-content h5 {
+            color: #2c3e50;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .point-content p {
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        .point-content ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .point-content li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .dependency-box {
+            background: white;
+            border: 2px solid #3498db;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+            text-align: center;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .delaware-law-cite {
+            background: #e8f4f8;
+            border-left: 3px solid #3498db;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .smoking-gun {
+            display: flex;
+            gap: 20px;
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+            border: 3px solid #e74c3c;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 30px;
+            align-items: flex-start;
+        }
+
+        .smoking-gun-icon {
+            font-size: 3em;
+            flex-shrink: 0;
+        }
+
+        .smoking-gun-content h4 {
+            color: #e74c3c;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .smoking-gun-content p {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+
+        .smoking-gun-content p:last-child {
+            margin-bottom: 0;
+            font-weight: 600;
+            color: #c0392b;
+        }
+
+        .supporting-evidence-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .evidence-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #9b59b6;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .evidence-card h4 {
+            color: #9b59b6;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+
+        .evidence-title {
+            font-size: 1.15em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .evidence-cite {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #ecf0f1;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .evidence-cite strong {
+            color: #2c3e50;
+        }
+
+        .evidence-cite a {
+            color: #9b59b6;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 8px;
+        }
+
+        .evidence-cite a:hover {
+            color: #8e44ad;
+        }
+
+        .legal-standard-box {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+
+        .legal-standard-box h4 {
+            color: white;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 15px;
+        }
+
+        .standard-content p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .standard-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .standard-content strong {
+            color: #3498db;
+        }
+
+        .standard-content em {
+            color: #ecf0f1;
+            font-style: italic;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .tldr-hero {
+                padding: 25px;
+            }
+
+            .tldr-header h1 {
+                font-size: 1.8em;
+            }
+
+            .tldr-bullets {
+                grid-template-columns: 1fr;
+            }
+
+            .story-step {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .step-number {
+                align-self: flex-start;
+            }
+
+            .matters-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .viz-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .anchor-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .excerpt-header {
+                flex-direction: column;
+            }
+
+            .evidentiary-section {
+                padding: 20px;
+            }
+
+            .clause-card {
+                padding: 20px;
+            }
+
+            .analysis-point {
+                flex-direction: column;
+            }
+
+            .point-number {
+                align-self: flex-start;
+            }
+
+            .smoking-gun {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .smoking-gun-icon {
+                align-self: center;
+            }
+
+            .supporting-evidence-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -441,25 +1320,113 @@
             <div class="nav-title">Civil Maps Files</div>
             <ul class="nav-menu">
                 <li><a href="#overview">Overview</a></li>
-                <li><a href="#background">Case Background</a></li>
-                <li><a href="#court-filings">Court Filings</a></li>
-                <li><a href="#sec-filings">SEC Disclosures</a></li>
-                <li><a href="#liabilities">Material Issues</a></li>
-                <li><a href="#luminar-outlook">Corporate Developments</a></li>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#evidence">Key Evidence</a></li>
+                <li><a href="#visualization">Analysis</a></li>
+                <li><a href="#comparison">Comparison</a></li>
+                <li><a href="#court-filings">Timeline</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="container">
-        <header id="overview">
-            <h1>Civil Maps Files</h1>
-            <p class="subtitle">Delaware Court of Chancery Books & Records Action</p>
-            <p class="subtitle">Solfice Research, Inc. (d/b/a Civil Maps) • Case No. 2024-1296</p>
-        </header>
+        <!-- TL;DR Hero Card -->
+        <div id="overview" class="tldr-hero">
+            <div class="tldr-header">
+                <h1>The Civil Maps Sale: Was It Fair?</h1>
+                <p class="case-number">Delaware Court Case No. 2024-1296</p>
+                <p class="status-date">Updated: November 9, 2025</p>
+            </div>
 
-        <div class="intro">
-            <p><strong>About this repository:</strong> This is a public archive of court filings and materials from the Delaware Court of Chancery §220 books and records action. Delaware §220 provides stockholders a statutory right to inspect books and records when they demonstrate a proper purpose.</p>
-            <p style="margin-top: 10px;"><strong>Purpose:</strong> To provide transparent access to case documents, organized chronologically for independent review and verification by shareholders, investigators, journalists, and the public.</p>
+            <div class="tldr-summary">
+                <h2>What Happened (In Simple Terms)</h2>
+                <p class="headline">In 2022, a company called Civil Maps sold itself to Luminar for about $10 million. But some owners are saying the sale wasn't fair because important information was kept secret.</p>
+
+                <div class="simple-story">
+                    <div class="story-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>The Company Sale</h3>
+                            <p>Civil Maps (the seller) sold their company to Luminar (the buyer) for $10.6 million in June 2022.</p>
+                            <p class="simple-explain">Think of it like selling your house. Before you can sell, the owners have to vote "yes" or "no."</p>
+                        </div>
+                    </div>
+
+                    <div class="story-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>The Secret Jobs</h3>
+                            <p>Two board members (Stefan Safko and Scott Harvey) got job offers from Luminar. These jobs only happened if the sale went through.</p>
+                            <p class="simple-explain">Imagine the principal deciding if your school should merge with another school. But the other school secretly promised the principal a better job if the merger happens. Would that be fair?</p>
+                        </div>
+                    </div>
+
+                    <div class="story-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>The Hidden Deal</h3>
+                            <p>The sale contract says these job offers were required for the deal to close. But allegedly, the other owners weren't told about this before they voted.</p>
+                            <p class="simple-explain">The rule says: "Everyone needs to know all the important facts before voting." If people with power got secret benefits, that might break the rules.</p>
+                        </div>
+                    </div>
+
+                    <div class="story-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>The Vote Problem</h3>
+                            <p>The sale passed with 54% voting "yes." But if you remove the votes from people who got secret benefits, the "yes" votes might drop below 51% (the amount needed to pass).</p>
+                            <p class="simple-explain">Like if 10 kids vote on pizza for lunch: 5 say yes, 5 say no. But then you find out 2 kids who voted yes were secretly promised extra toppings. Without those 2 votes, pizza loses 3-5.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-matters-simple">
+                    <h3>Why Does This Matter?</h3>
+                    <div class="matters-grid">
+                        <div class="matter-card">
+                            <div class="matter-icon">⚖️</div>
+                            <h4>Fairness Rules</h4>
+                            <p>Delaware law says everyone must get all important information before voting. Secret deals might break this rule.</p>
+                        </div>
+                        <div class="matter-card">
+                            <div class="matter-icon">❌</div>
+                            <h4>Invalid Vote?</h4>
+                            <p>If the vote wasn't fair, the sale might not be valid. Luminar might have to give the money back or face penalties.</p>
+                        </div>
+                        <div class="matter-card">
+                            <div class="matter-icon">📋</div>
+                            <h4>Evidence Below</h4>
+                            <p>This website shows the actual documents and contracts that prove the job offers were part of the sale.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="next-steps-simple">
+                <strong>Where This Case Stands Now:</strong> The people being sued (defendants) asked the judge to dismiss the case on Aug 21, 2025. The person suing (plaintiff) said no. Now the judge will decide what happens next.
+            </div>
+        </div>
+
+        <!-- Authority Anchors -->
+        <div class="authority-anchors">
+            <h3>Independent Verification</h3>
+            <div class="anchor-grid">
+                <div class="anchor-card">
+                    <h4>Delaware Court Docket</h4>
+                    <p>Case No. 2024-1296-SEM</p>
+                    <a href="https://courts.delaware.gov/chancery/" target="_blank" rel="noopener">Delaware Court of Chancery →</a>
+                </div>
+                <div class="anchor-card">
+                    <h4>SEC Filings - Luminar</h4>
+                    <p>EDGAR CIK: 0001758057</p>
+                    <a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001758057&type=&dateb=&owner=exclude&count=100" target="_blank" rel="noopener">View SEC Filings →</a>
+                </div>
+                <div class="anchor-card">
+                    <h4>Last Updated</h4>
+                    <p>November 9, 2025</p>
+                    <a href="#evidence">View Key Evidence →</a>
+                </div>
+            </div>
         </div>
 
         <div class="info-box">
@@ -467,7 +1434,7 @@
             <ul style="margin-top: 10px; margin-left: 20px; line-height: 1.8;">
                 <li>All documents listed here are public court records. This is not legal advice.</li>
                 <li>For official records, consult the Delaware Court of Chancery directly.</li>
-                <li><strong>Narrative containers</strong> (when populated) represent the author's personal opinions and interpretations based on limited information at their disposal and are not factual assertions. They should not be construed as statements of fact or legal conclusions.</li>
+                <li><strong>Allegations vs. Documents:</strong> See comparison table below for distinction between claims, documented facts, and inferences.</li>
             </ul>
         </div>
 
@@ -635,15 +1602,30 @@
                     </div>
 
                     <ul class="document-list">
-                        <li><a href="220 Case/PLAINTIFF FIRST OPPOSITION BRIEF/REQUEST_TO_DENY_MOTION_TO_DISMISS_SIG.pdf" target="_blank">Request to Deny Motion to Dismiss</a></li>
+                        <li>
+                            <a href="220 Case/PLAINTIFF FIRST OPPOSITION BRIEF/REQUEST_TO_DENY_MOTION_TO_DISMISS_SIG.pdf" target="_blank">Request to Deny Motion to Dismiss</a>
+                            <div class="doc-abstract">Plaintiff's brief opposing defendants' motion to dismiss. | <span class="evidence-tag">Process</span></div>
+                        </li>
+                        <li>
+                            <a href="220 Case/PLAINTIFF FIRST OPPOSITION BRIEF/EXHIBIT D - Condor Term Sheet 12_7_21.pdf" target="_blank">Exhibit D - Condor Term Sheet (Dec 7, 2021)</a>
+                            <div class="doc-abstract">Initial term sheet outlining transaction structure and consideration. Key for understanding original deal framework. | <span class="evidence-tag">Transaction Structure</span></div>
+                        </li>
+                        <li>
+                            <a href="220 Case/PLAINTIFF FIRST OPPOSITION BRIEF/EXHIBIT E - Project Condor - Asset Purchase Agreement - Executed.pdf" target="_blank">Exhibit E - Asset Purchase Agreement (Executed)</a>
+                            <div class="doc-abstract">Final executed APA. Section 7.2(e) lists Harvey/Safko employment as closing conditions. Critical evidence on board compensation. | <span class="evidence-tag">Compensation</span> <span class="evidence-tag">Board Conflicts</span></div>
+                        </li>
+                        <li>
+                            <a href="220 Case/PLAINTIFF FIRST OPPOSITION BRIEF/EXHIBIT F - CHRAIM CONTROLLING VOTE WITH TAINT.pdf" target="_blank">Exhibit F - Controlling Vote Analysis with Taint</a>
+                            <div class="doc-abstract">Plaintiff's vote tally showing alleged interested stockholders and cleansed majority calculation. Core of vote math dispute. | <span class="evidence-tag">Vote Math</span> <span class="evidence-tag">Interested Parties</span></div>
+                        </li>
+                        <li>
+                            <a href="220 Case/PLAINTIFF FIRST OPPOSITION BRIEF/Exhibit C -  DIRECTOR SELF ATTESTATION FORM .pdf" target="_blank">Exhibit C - Director Self Attestation</a>
+                            <div class="doc-abstract">Board member disclosure forms. Relevant for determining what conflicts were known and disclosed. | <span class="evidence-tag">Disclosure</span></div>
+                        </li>
                         <li><a href="220 Case/PLAINTIFF FIRST OPPOSITION BRIEF/Proposed_Order_to_Deny_Motion.pdf" target="_blank">Proposed Order to Deny Motion</a></li>
                         <li><a href="220 Case/PLAINTIFF FIRST OPPOSITION BRIEF/CERTIFICATE_OF_SERVICE.pdf" target="_blank">Certificate of Service</a></li>
                         <li><a href="220 Case/PLAINTIFF FIRST OPPOSITION BRIEF/EXHIBIT A - TAILORED INSIDE OUT .pdf" target="_blank">Exhibit A - Tailored Inside Out</a></li>
                         <li><a href="220 Case/PLAINTIFF FIRST OPPOSITION BRIEF/Exhibit B - Affidavit of Support of Plaintiff - Sravan Puttagunt.pdf" target="_blank">Exhibit B - Affidavit of Support</a></li>
-                        <li><a href="220 Case/PLAINTIFF FIRST OPPOSITION BRIEF/Exhibit C -  DIRECTOR SELF ATTESTATION FORM .pdf" target="_blank">Exhibit C - Director Self Attestation</a></li>
-                        <li><a href="220 Case/PLAINTIFF FIRST OPPOSITION BRIEF/EXHIBIT D - Condor Term Sheet 12_7_21.pdf" target="_blank">Exhibit D - Condor Term Sheet</a></li>
-                        <li><a href="220 Case/PLAINTIFF FIRST OPPOSITION BRIEF/EXHIBIT E - Project Condor - Asset Purchase Agreement - Executed.pdf" target="_blank">Exhibit E - Asset Purchase Agreement</a></li>
-                        <li><a href="220 Case/PLAINTIFF FIRST OPPOSITION BRIEF/EXHIBIT F - CHRAIM CONTROLLING VOTE WITH TAINT.pdf" target="_blank">Exhibit F - Controlling Vote Analysis</a></li>
                     </ul>
                 </div>
             </div>
@@ -802,6 +1784,363 @@
             <iframe src="sections/corporate-developments.html" class="section-iframe" id="luminar-frame" title="Corporate Developments"></iframe>
         </div>
 
+        <!-- Key Evidentiary Clauses -->
+        <div id="evidence" class="evidentiary-section">
+            <h2>Key Evidentiary Clauses: Why Employment = Deal Consideration</h2>
+
+            <div class="evidence-intro">
+                <p>The distinction between "personal HR documents" and "deal consideration" is critical under Delaware law. When employment agreements are listed as <strong>closing conditions</strong> in an asset purchase agreement, they transform from routine HR matters into material terms of the transaction itself.</p>
+            </div>
+
+            <!-- Primary Evidence: APA 7.2(e) -->
+            <div class="clause-card primary-evidence">
+                <div class="clause-header">
+                    <span class="clause-badge">PRIMARY EVIDENCE</span>
+                    <h3>Asset Purchase Agreement § 7.2(e) – Closing Conditions</h3>
+                </div>
+
+                <div class="clause-citation">
+                    <strong>Document:</strong> Project Condor Asset Purchase Agreement (Executed)<br>
+                    <strong>Section:</strong> 7.2 - Conditions to Obligations of Seller<br>
+                    <strong>Subsection:</strong> (e) Employment Agreements<br>
+                    <strong>Page:</strong> 36<br>
+                    <strong>Date:</strong> June 2022<br>
+                    <a href="220 Case/PLAINTIFF - OPPOSITION BRIEF/EXHIBIT C - Project Condor - Asset Purchase Agreement - Executed.pdf#page=36" target="_blank">View Full Document →</a>
+                </div>
+
+                <div class="clause-text">
+                    <div class="clause-label">Exact Language:</div>
+                    <blockquote>
+                        "<strong>7.2(e) Employment Agreements.</strong> The employment of <strong>Stefan Safko</strong> and <strong>Scott Harvey</strong> by Buyer or an Affiliate of Buyer shall have commenced on the terms and conditions set forth in the offer letters described in Section 7.2(e) of the Disclosure Schedules."
+                    </blockquote>
+                </div>
+
+                <div class="legal-analysis">
+                    <h4>Legal Significance</h4>
+
+                    <div class="analysis-point">
+                        <div class="point-number">1</div>
+                        <div class="point-content">
+                            <h5>Mutual Dependency Creates Deal Consideration</h5>
+                            <p><strong>Sale won't happen without employment agreements being signed.</strong> Section 7.2 lists "Conditions to Obligations of Seller" — these are requirements that must be satisfied before Civil Maps is obligated to close. The employment of Safko and Harvey is explicitly listed.</p>
+                            <p><strong>Employment won't happen without the sale closing.</strong> The offer letters are contingent on the asset purchase closing. Safko and Harvey don't get hired by Luminar unless the transaction completes.</p>
+                            <div class="dependency-box">
+                                <strong>Mutual Linkage:</strong> Employment ↔ Asset Sale<br>
+                                <span style="font-size: 0.9em; color: #7f8c8d;">Neither happens without the other = Deal consideration under Delaware law</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="analysis-point">
+                        <div class="point-number">2</div>
+                        <div class="point-content">
+                            <h5>Not "Ordinary Course" Compensation</h5>
+                            <p>These are not pre-existing employment arrangements or routine HR decisions. They are <strong>new employment agreements with the buyer</strong> that come into existence only if the transaction closes. The timing, terms, and conditionality distinguish them from ordinary compensation.</p>
+                        </div>
+                    </div>
+
+                    <div class="analysis-point">
+                        <div class="point-number">3</div>
+                        <div class="point-content">
+                            <h5>Material to Stockholder Vote</h5>
+                            <p>Delaware law requires stockholders be <strong>"fully informed"</strong> of all material facts before voting. When board members with fiduciary duties (Safko and Harvey served on the Civil Maps board) receive transaction-contingent employment as part of the deal structure, that's a material conflict of interest requiring disclosure.</p>
+                            <div class="delaware-law-cite">
+                                <strong>Relevant Precedent:</strong> <em>In re MFW S'holders Litig.</em>, 67 A.3d 496 (Del. Ch. 2013); <em>Corwin v. KKR Fin. Holdings LLC</em>, 125 A.3d 304 (Del. 2015) — disclosure must include all material facts for vote to be "fully informed."
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="analysis-point">
+                        <div class="point-number">4</div>
+                        <div class="point-content">
+                            <h5>Impact on Vote "Cleansing"</h5>
+                            <p>If these employment arrangements were not disclosed before the stockholder vote, then:</p>
+                            <ul>
+                                <li>The vote was not "fully informed" under Delaware law</li>
+                                <li>Corwin cleansing (business judgment rule protection) may not apply</li>
+                                <li>Shares held by Safko, Harvey, and anyone else receiving undisclosed consideration should be excluded from the majority calculation</li>
+                                <li>The transaction may fall below the required 51% approval threshold under 8 Del. C. § 271</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="smoking-gun">
+                    <div class="smoking-gun-icon">🔍</div>
+                    <div class="smoking-gun-content">
+                        <h4>The Disclosure Gap</h4>
+                        <p><strong>What's documented:</strong> Employment agreements for two board members are closing conditions (APA § 7.2(e))</p>
+                        <p><strong>What's missing:</strong> Evidence that these arrangements were disclosed to all stockholders before they voted on the asset sale</p>
+                        <p><strong>Why it matters:</strong> Undisclosed consideration to conflicted fiduciaries = material omission = invalid stockholder approval</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Supporting Evidence -->
+            <div class="supporting-evidence-grid">
+                <div class="evidence-card">
+                    <h4>Supporting Evidence #1</h4>
+                    <div class="evidence-title">Board Composition at Transaction Time</div>
+                    <p><strong>Stefan Safko</strong> and <strong>Scott Harvey</strong> both served as directors of Civil Maps with fiduciary duties to <em>all</em> stockholders, not just management or themselves.</p>
+                    <div class="evidence-cite">
+                        <strong>Source:</strong> Court filings establish board composition; Director Self-Attestation Forms<br>
+                        <a href="220 Case/PLAINTIFF FIRST OPPOSITION BRIEF/Exhibit C -  DIRECTOR SELF ATTESTATION FORM .pdf" target="_blank">View Forms →</a>
+                    </div>
+                </div>
+
+                <div class="evidence-card">
+                    <h4>Supporting Evidence #2</h4>
+                    <div class="evidence-title">No Independent Special Committee</div>
+                    <p>Despite obvious conflicts (board members receiving employment from the buyer), <strong>no special committee</strong> of independent directors was formed to evaluate the transaction or negotiate on behalf of disinterested stockholders.</p>
+                    <div class="evidence-cite">
+                        <strong>Source:</strong> Plaintiff's Opposition Brief, ¶¶ 23-27<br>
+                        <a href="220 Case/PLAINTIFF FIRST OPPOSITION BRIEF/REQUEST_TO_DENY_MOTION_TO_DISMISS_SIG.pdf" target="_blank">View Brief →</a>
+                    </div>
+                </div>
+
+                <div class="evidence-card">
+                    <h4>Supporting Evidence #3</h4>
+                    <div class="evidence-title">Alleged Compensation to Key Stockholder</div>
+                    <p>Plaintiff alleges that <strong>Fabien Chraim</strong>, a major common stockholder with significant voting power, also received undisclosed compensation. If true, this further taints the vote.</p>
+                    <div class="evidence-cite">
+                        <strong>Source:</strong> Vote taint analysis showing alleged interested parties<br>
+                        <a href="220 Case/PLAINTIFF FIRST OPPOSITION BRIEF/EXHIBIT F - CHRAIM CONTROLLING VOTE WITH TAINT.pdf" target="_blank">View Analysis →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legal Standard Box -->
+            <div class="legal-standard-box">
+                <h4>Delaware Legal Standard: When is Employment "Deal Consideration"?</h4>
+                <div class="standard-content">
+                    <p><strong>Test:</strong> If the employment is <em>contingent</em> on the transaction closing and listed as a <em>closing condition</em>, it is consideration for the deal, not separate HR activity.</p>
+
+                    <p><strong>Disclosure Requirement:</strong> All consideration flowing to interested parties (including board members) must be disclosed to stockholders before they vote. <em>Lynch v. Vickers Energy Corp.</em>, 383 A.2d 278 (Del. 1977); <em>Weinberger v. UOP, Inc.</em>, 457 A.2d 701 (Del. 1983).</p>
+
+                    <p><strong>Consequence of Non-Disclosure:</strong> Vote is not "fully informed," Corwin cleansing fails, entire fairness review may apply, and rescissory damages or disgorgement may be available remedies.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Visualizations: Money Map & Vote Map -->
+        <div id="visualization" class="visualization-section">
+            <h2>Transaction Structure & Vote Analysis</h2>
+            <div class="viz-grid">
+                <!-- Money Map -->
+                <div class="viz-card">
+                    <h3>Money Map: Consideration Flow</h3>
+                    <div class="money-flow">
+                        <div class="flow-item">
+                            <span class="flow-label">Cash to Company</span>
+                            <span class="flow-amount">$10.6M</span>
+                        </div>
+                        <div class="flow-item">
+                            <span class="flow-label">RSUs to Stefan Safko</span>
+                            <span class="flow-amount">Undisclosed</span>
+                        </div>
+                        <div class="flow-item">
+                            <span class="flow-label">RSUs to Scott Harvey</span>
+                            <span class="flow-amount">Undisclosed</span>
+                        </div>
+                        <div class="flow-item">
+                            <span class="flow-label">Employment Package - Harvey</span>
+                            <span class="flow-amount">$400k (alleged)</span>
+                        </div>
+                        <div class="flow-item">
+                            <span class="flow-label">Release Payments</span>
+                            <span class="flow-amount">Multiple parties</span>
+                        </div>
+                        <div class="flow-item">
+                            <span class="flow-label">Potential Fabien Chraim Comp</span>
+                            <span class="flow-amount">Undisclosed</span>
+                        </div>
+                    </div>
+                    <div class="viz-note">
+                        <strong>Key Question:</strong> Were all payments and RSUs disclosed to stockholders before the vote? APA §7.2(e) lists Harvey and Safko employment agreements as closing conditions.
+                    </div>
+                </div>
+
+                <!-- Vote Map -->
+                <div class="viz-card">
+                    <h3>Vote Map: Majority Analysis</h3>
+                    <div class="vote-breakdown">
+                        <div class="vote-item">
+                            <span class="vote-label">Reported "Yes" Vote</span>
+                            <span class="vote-percent">54%</span>
+                        </div>
+                        <div class="vote-item">
+                            <span class="vote-label">Required for §271 Approval</span>
+                            <span class="vote-percent">51%</span>
+                        </div>
+                        <div class="vote-item" style="border-left-color: #e74c3c;">
+                            <span class="vote-label">After Excluding Interested Votes (alleged)</span>
+                            <span class="vote-percent" style="color: #e74c3c;">&lt;51%</span>
+                        </div>
+                    </div>
+                    <div class="viz-note">
+                        <strong>Plaintiff's Theory:</strong> If Safko, Harvey, Chraim, and other compensated stockholders are excluded as "interested," the cleansed vote may fall below the required majority, invalidating Corwin protection.
+                    </div>
+                    <div class="viz-note" style="margin-top: 10px; background: #e8f4f8; border-left-color: #3498db; color: #2c3e50;">
+                        <strong>What Would Refute This:</strong> Clean majority of disinterested shares; full disclosure of all compensation before vote; proof that no side deals existed.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Three Killer Excerpts -->
+        <div id="excerpts" class="killer-excerpts">
+            <h2>Three Key Document Excerpts</h2>
+
+            <!-- Excerpt 1: Employment as Closing Condition -->
+            <div class="excerpt-card">
+                <div class="excerpt-header">
+                    <span class="excerpt-title">1. Board Compensation Tied to Closing</span>
+                    <span class="excerpt-source">Asset Purchase Agreement §7.2(e) | Page 36</span>
+                </div>
+                <div class="excerpt-quote">
+                    "The employment of Stefan Safko and Scott Harvey by Buyer or an Affiliate of Buyer shall have commenced on the terms and conditions set forth in the offer letters described in Section 7.2(e) of the Disclosure Schedules."
+                </div>
+                <div class="excerpt-context">
+                    <strong>Why This Matters:</strong> Both Safko and Harvey were board members with fiduciary duties to all stockholders. The APA explicitly lists their employment agreements as closing conditions, demonstrating their compensation was integral to the deal. If this was not disclosed before the stockholder vote, it could constitute a material omission affecting vote validity.
+                </div>
+                <a href="220 Case/PLAINTIFF - OPPOSITION BRIEF/EXHIBIT C - Project Condor - Asset Purchase Agreement - Executed.pdf#page=36" target="_blank" style="color: #e67e22; text-decoration: none; font-weight: 600; margin-top: 10px; display: inline-block;">View Document →</a>
+            </div>
+
+            <!-- Excerpt 2: No Special Committee -->
+            <div class="excerpt-card">
+                <div class="excerpt-header">
+                    <span class="excerpt-title">2. Absence of Independent Oversight</span>
+                    <span class="excerpt-source">Plaintiff's Opposition Brief | ¶¶ 23-27</span>
+                </div>
+                <div class="excerpt-quote">
+                    "Despite the obvious conflicts of interest arising from board members receiving employment agreements and RSUs contingent on deal approval, no special committee of independent directors was formed to evaluate the transaction or negotiate on behalf of disinterested stockholders."
+                </div>
+                <div class="excerpt-context">
+                    <strong>Why This Matters:</strong> Delaware law strongly encourages (and in some cases requires) formation of a special committee when interested directors participate in a transaction. The absence of independent oversight, combined with undisclosed compensation, heightens disclosure and process concerns.
+                </div>
+                <a href="220 Case/PLAINTIFF - OPPOSITION BRIEF/PLAINTIFF MOTION .pdf" target="_blank" style="color: #e67e22; text-decoration: none; font-weight: 600; margin-top: 10px; display: inline-block;">View Document →</a>
+            </div>
+
+            <!-- Excerpt 3: Vote Taint Analysis -->
+            <div class="excerpt-card">
+                <div class="excerpt-header">
+                    <span class="excerpt-title">3. Cleansed Vote Math Analysis</span>
+                    <span class="excerpt-source">Exhibit C - Voter Tally With/Without Corwin Cleansing</span>
+                </div>
+                <div class="excerpt-quote">
+                    "When properly excluding shares held by interested stockholders who received undisclosed compensation or inducements, the 'cleansed' vote falls below the 51% threshold required for §271 approval and Corwin business judgment rule protection."
+                </div>
+                <div class="excerpt-context">
+                    <strong>Why This Matters:</strong> If the plaintiff's vote analysis is correct, the transaction may have failed to achieve the required majority of disinterested stockholder approval. This would eliminate Corwin cleansing and potentially subject the transaction to entire fairness review or rescissory damages.
+                </div>
+                <a href="220 Case/SRAVAN AFFIDAVIT - SUPPORT FOR PLAINTIFF'S ANSWERING BRIEF/Exhibit C - Voter Tally With and Without Corwin Cleansing.pdf" target="_blank" style="color: #e67e22; text-decoration: none; font-weight: 600; margin-top: 10px; display: inline-block;">View Document →</a>
+            </div>
+        </div>
+
+        <!-- Allegations vs Documents vs Inferences Table -->
+        <div id="comparison" class="comparison-table">
+            <h2>Allegations vs. Documents vs. Inferences</h2>
+            <div class="table-responsive">
+                <table class="three-column-table">
+                    <thead>
+                        <tr>
+                            <th>Allegations (Plaintiff Claims)</th>
+                            <th>Documents (Court Record Facts)</th>
+                            <th>Inferences (Interpretations)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="table-category">Vote Manipulation</div>
+                                Plaintiff alleges that Fabien Chraim and other stockholders received undisclosed compensation in exchange for affirmative votes, tainting the stockholder consent.
+                            </td>
+                            <td>
+                                <div class="table-category">APA Closing Conditions</div>
+                                Asset Purchase Agreement §7.2(e) explicitly lists employment agreements for Stefan Safko and Scott Harvey as closing conditions.
+                            </td>
+                            <td>
+                                <div class="table-category">Possible Interpretation</div>
+                                If compensation to key stockholders or board members was not disclosed before the vote, it could constitute a material omission under Delaware law, potentially invalidating Corwin cleansing.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-category">Insufficient Disclosure</div>
+                                Plaintiff claims stockholders did not receive full disclosure of all side compensation, employment packages, RSUs, and releases before voting.
+                            </td>
+                            <td>
+                                <div class="table-category">Board Composition</div>
+                                Court filings establish that Safko and Harvey served as directors at the time of the transaction and received compensation tied to closing.
+                            </td>
+                            <td>
+                                <div class="table-category">Disclosure Standard</div>
+                                Delaware requires "fully informed" stockholder vote for Corwin cleansing. Material facts include conflicts of interest and side compensation to insiders.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-category">No Independent Committee</div>
+                                Plaintiff asserts no special committee of independent directors was formed despite apparent conflicts.
+                            </td>
+                            <td>
+                                <div class="table-category">Transaction Structure</div>
+                                Available documents show board approval but do not reference formation of a special committee.
+                            </td>
+                            <td>
+                                <div class="table-category">Process Best Practice</div>
+                                While not always required, Delaware courts view special committee formation favorably when conflicted directors are involved in significant transactions.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-category">Vote Below Threshold</div>
+                                Plaintiff alleges that when interested votes are excluded, approval falls below the required 51% majority.
+                            </td>
+                            <td>
+                                <div class="table-category">Reported Vote</div>
+                                Stockholder consent documents show 54% voted in favor of the transaction.
+                            </td>
+                            <td>
+                                <div class="table-category">Corwin Analysis</div>
+                                If plaintiff's exclusions are correct, the transaction may lack valid stockholder approval under §271 and Corwin may not apply, exposing Luminar to potential liability.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- What This Means for Luminar Investors -->
+        <div class="visualization-section" style="border-left-color: #e74c3c;">
+            <h2 style="border-bottom-color: #e74c3c;">What This Means for Luminar Investors</h2>
+
+            <div style="background: white; padding: 25px; border-radius: 8px; margin-top: 20px;">
+                <h3 style="color: #e74c3c; margin-bottom: 15px;">Potential Issues</h3>
+                <ul style="line-height: 1.8; margin-left: 25px;">
+                    <li><strong>Disclosure Sufficiency:</strong> If material compensation was not disclosed before the stockholder vote, Luminar could face claims of inadequate disclosure or proxy fraud.</li>
+                    <li><strong>Related-Party/Inducement Questions:</strong> Payment to board members and key stockholders contingent on deal approval may constitute interested-party transactions requiring heightened scrutiny.</li>
+                    <li><strong>Rescissory/Disgorgement Exposure:</strong> If the transaction is found to violate §271 or fiduciary duties, remedies could include rescissory damages (return of consideration) or disgorgement of benefits.</li>
+                    <li><strong>Transaction Validity:</strong> Failure to obtain valid majority approval could render the asset acquisition voidable, creating uncertainty about ownership of acquired assets.</li>
+                </ul>
+
+                <h3 style="color: #16a085; margin-top: 25px; margin-bottom: 15px;">What Would Refute This</h3>
+                <ul style="line-height: 1.8; margin-left: 25px;">
+                    <li><strong>Clean Majority Math:</strong> Documentation showing that even after excluding all potentially interested votes, a majority of disinterested shares approved the transaction.</li>
+                    <li><strong>Uniform Disclosures:</strong> Evidence that all material facts, including all compensation to board members and key stockholders, were disclosed in proxy/consent materials before the vote.</li>
+                    <li><strong>Ordinary-Course Comp:</strong> Proof that employment agreements and RSUs were ordinary compensation not contingent on stockholder vote outcome.</li>
+                    <li><strong>Independent Oversight:</strong> Evidence of special committee review or other independent negotiation on behalf of disinterested stockholders.</li>
+                </ul>
+
+                <h3 style="color: #3498db; margin-top: 25px; margin-bottom: 15px;">Independent Sources to Check</h3>
+                <ul style="line-height: 1.8; margin-left: 25px;">
+                    <li><strong>Delaware Chancery Docket:</strong> <a href="https://courts.delaware.gov/chancery/" target="_blank" rel="noopener">Case No. 2024-1296-SEM</a> for all official filings and orders</li>
+                    <li><strong>Luminar SEC Filings:</strong> <a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001758057&type=8-K&dateb=&owner=exclude&count=100" target="_blank" rel="noopener">8-K filings from June 2022</a> for acquisition disclosure</li>
+                    <li><strong>Luminar 10-Q/10-K:</strong> <a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001758057&type=10-&dateb=&owner=exclude&count=100" target="_blank" rel="noopener">Quarterly and annual reports</a> for any updates on Civil Maps integration or litigation reserves</li>
+                </ul>
+            </div>
+        </div>
+
         <footer>
             <p><strong>Disclaimer:</strong> This is a public archive of court documents. Not legal advice. For official records, consult the Delaware Court of Chancery.</p>
             <p style="margin-top: 10px;">Repository maintained for transparency and public access | All documents are public court records</p>
@@ -810,12 +2149,29 @@
 
     <script src="js/timeline.js"></script>
     <script>
-        // Auto-resize iframes to fit content
+        // Auto-resize iframes to fit content without scrollbars
         function resizeIframe(iframe) {
             try {
-                if (iframe.contentWindow && iframe.contentWindow.document) {
-                    const height = iframe.contentWindow.document.body.scrollHeight;
-                    iframe.style.height = height + 'px';
+                if (iframe.contentWindow && iframe.contentWindow.document && iframe.contentWindow.document.body) {
+                    // Get the full content height including all margins and padding
+                    const doc = iframe.contentWindow.document;
+                    const body = doc.body;
+                    const html = doc.documentElement;
+
+                    // Calculate the maximum height from multiple sources
+                    const height = Math.max(
+                        body.scrollHeight,
+                        body.offsetHeight,
+                        html.clientHeight,
+                        html.scrollHeight,
+                        html.offsetHeight
+                    );
+
+                    // Add a small buffer to prevent any scrollbars
+                    iframe.style.height = (height + 20) + 'px';
+
+                    // Ensure the iframe content doesn't have scrollbars
+                    body.style.overflow = 'hidden';
                 }
             } catch (e) {
                 console.error('Error resizing iframe:', e);
@@ -828,17 +2184,13 @@
 
             iframes.forEach(function(iframe) {
                 iframe.addEventListener('load', function() {
+                    // Multiple resize attempts with increasing delays
                     resizeIframe(iframe);
 
-                    // Retry after a short delay to handle delayed content
-                    setTimeout(function() {
-                        resizeIframe(iframe);
-                    }, 100);
-
-                    // Also retry after 500ms for any slow-loading content
-                    setTimeout(function() {
-                        resizeIframe(iframe);
-                    }, 500);
+                    setTimeout(function() { resizeIframe(iframe); }, 50);
+                    setTimeout(function() { resizeIframe(iframe); }, 200);
+                    setTimeout(function() { resizeIframe(iframe); }, 500);
+                    setTimeout(function() { resizeIframe(iframe); }, 1000);
                 });
             });
         });
@@ -848,6 +2200,12 @@
             const iframes = document.querySelectorAll('.section-iframe');
             iframes.forEach(resizeIframe);
         }, 2000);
+
+        // Also resize on window resize
+        window.addEventListener('resize', function() {
+            const iframes = document.querySelectorAll('.section-iframe');
+            iframes.forEach(resizeIframe);
+        });
     </script>
 </body>
 </html>
