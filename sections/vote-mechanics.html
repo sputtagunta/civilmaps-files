@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         html, body {
             margin: 0;
@@ -12,13 +16,34 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
             line-height: 1.8;
             color: #34495e;
             padding: 30px;
             background: white;
             max-width: 1200px;
             margin: 0 auto;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .highlight-quote,
+        .key-fact-box,
+        .evidence-box,
+        .warning-box,
+        .legal-note,
+        .critical-box,
+        .info-box,
+        blockquote {
+            font-family: 'Merriweather', Georgia, serif;
+            font-weight: 400;
         }
 
         h3 {
