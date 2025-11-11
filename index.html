@@ -113,24 +113,27 @@
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 0;
+            gap: 5px;
             margin: 0;
             padding: 0;
+            align-items: stretch;
         }
 
-        .nav-menu li {
+        .nav-menu > li {
             margin: 0;
+            position: relative;
         }
 
         .nav-menu a {
             display: block;
             color: #ecf0f1;
             text-decoration: none;
-            padding: 20px 20px;
+            padding: 18px 16px;
             transition: all 0.3s;
-            font-size: 0.95em;
+            font-size: 0.9em;
             font-weight: 500;
             border-bottom: 3px solid transparent;
+            white-space: nowrap;
         }
 
         .nav-menu a:hover {
@@ -142,6 +145,67 @@
         .nav-menu a.active {
             background: #34495e;
             border-bottom-color: #3498db;
+        }
+
+        /* Dropdown menu styles */
+        .nav-menu .has-dropdown {
+            position: relative;
+        }
+
+        .nav-menu .dropdown-toggle {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-menu .dropdown-toggle::after {
+            content: "▼";
+            font-size: 0.7em;
+            transition: transform 0.3s;
+        }
+
+        .nav-menu .has-dropdown:hover .dropdown-toggle::after {
+            transform: translateY(2px);
+        }
+
+        .nav-menu .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #34495e;
+            min-width: 220px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            border-radius: 0 0 8px 8px;
+            padding: 8px 0;
+            z-index: 1001;
+        }
+
+        .nav-menu .has-dropdown:hover .submenu {
+            display: block;
+        }
+
+        .nav-menu .submenu li {
+            margin: 0;
+        }
+
+        .nav-menu .submenu a {
+            padding: 12px 20px;
+            font-size: 0.85em;
+            border-bottom: none;
+            border-left: 3px solid transparent;
+        }
+
+        .nav-menu .submenu a:hover {
+            background: #2c3e50;
+            border-left-color: #3498db;
+            padding-left: 24px;
+        }
+
+        .nav-menu .submenu a.active {
+            background: #2c3e50;
+            border-left-color: #3498db;
         }
 
         /* Hamburger Menu Button */
@@ -206,6 +270,7 @@
                 overflow-y: auto;
                 box-shadow: 0 4px 6px rgba(0,0,0,0.1);
                 z-index: 1000;
+                gap: 0;
             }
 
             .nav-menu.active {
@@ -229,6 +294,46 @@
                 background: #34495e;
                 border-bottom: none;
                 border-left: 4px solid #3498db;
+            }
+
+            /* Mobile dropdown styles */
+            .nav-menu .submenu {
+                position: static;
+                display: none;
+                background: #34495e;
+                box-shadow: none;
+                border-radius: 0;
+                padding: 0;
+                min-width: 100%;
+            }
+
+            .nav-menu .has-dropdown.mobile-open .submenu {
+                display: block;
+            }
+
+            .nav-menu .dropdown-toggle {
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .nav-menu .dropdown-toggle::after {
+                transition: transform 0.3s;
+            }
+
+            .nav-menu .has-dropdown.mobile-open .dropdown-toggle::after {
+                transform: rotate(180deg);
+            }
+
+            .nav-menu .submenu a {
+                padding: 12px 20px 12px 40px;
+                font-size: 0.9em;
+                background: #34495e;
+                border-left: none;
+            }
+
+            .nav-menu .submenu a:hover {
+                background: #2c3e50;
+                padding-left: 44px;
             }
         }
 
@@ -2078,18 +2183,42 @@
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#overview" class="nav-link active" data-section="overview">Overview</a></li>
-                <li><a href="sections/civil-maps-company.html" class="nav-link">Civil Maps</a></li>
-                <li><a href="sections/luminar-technologies.html" class="nav-link">Luminar Tech</a></li>
-                <li><a href="#background" class="nav-link" data-section="background">Background</a></li>
-                <li><a href="#evidence" class="nav-link" data-section="evidence">Evidence</a></li>
-                <li><a href="#employee-compensation" class="nav-link" data-section="employee-compensation">Employee Comp</a></li>
-                <li><a href="#founder-correspondence" class="nav-link" data-section="founder-correspondence">Founder Correspondence</a></li>
-                <li><a href="#vote-mechanics" class="nav-link" data-section="vote-mechanics">Vote Mechanics</a></li>
-                <li><a href="#disclosure-delta" class="nav-link" data-section="disclosure-delta">Disclosure Delta</a></li>
-                <li><a href="#sec-filings" class="nav-link" data-section="sec-filings">SEC Filings</a></li>
-                <li><a href="#liabilities" class="nav-link" data-section="liabilities">Material Issues</a></li>
-                <li><a href="#luminar-outlook" class="nav-link" data-section="luminar-outlook">Corporate Dev</a></li>
-                <li><a href="#court-filings" class="nav-link" data-section="court-filings">§220 Timeline</a></li>
+
+                <li class="has-dropdown">
+                    <a class="nav-link dropdown-toggle">Companies</a>
+                    <ul class="submenu">
+                        <li><a href="sections/civil-maps-company.html" class="nav-link">Civil Maps</a></li>
+                        <li><a href="sections/luminar-technologies.html" class="nav-link">Luminar Technologies</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-dropdown">
+                    <a class="nav-link dropdown-toggle">Case Analysis</a>
+                    <ul class="submenu">
+                        <li><a href="#background" class="nav-link" data-section="background">Background</a></li>
+                        <li><a href="#liabilities" class="nav-link" data-section="liabilities">Material Issues</a></li>
+                        <li><a href="#evidence" class="nav-link" data-section="evidence">Evidence</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-dropdown">
+                    <a class="nav-link dropdown-toggle">Disclosure & Voting</a>
+                    <ul class="submenu">
+                        <li><a href="#disclosure-delta" class="nav-link" data-section="disclosure-delta">Disclosure Delta</a></li>
+                        <li><a href="#vote-mechanics" class="nav-link" data-section="vote-mechanics">Vote Mechanics</a></li>
+                        <li><a href="#employee-compensation" class="nav-link" data-section="employee-compensation">Employee Compensation</a></li>
+                        <li><a href="#founder-correspondence" class="nav-link" data-section="founder-correspondence">Founder Correspondence</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-dropdown">
+                    <a class="nav-link dropdown-toggle">Legal & Corporate</a>
+                    <ul class="submenu">
+                        <li><a href="#court-filings" class="nav-link" data-section="court-filings">§220 Timeline</a></li>
+                        <li><a href="#sec-filings" class="nav-link" data-section="sec-filings">SEC Filings</a></li>
+                        <li><a href="#luminar-outlook" class="nav-link" data-section="luminar-outlook">Corporate Developments</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </nav>
@@ -3470,6 +3599,18 @@
             hamburger.addEventListener('click', function() {
                 hamburger.classList.toggle('active');
                 navMenu.classList.toggle('active');
+            });
+
+            // Mobile dropdown toggle
+            const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+            dropdownToggles.forEach(toggle => {
+                toggle.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 968) {
+                        e.preventDefault();
+                        const parentLi = this.closest('.has-dropdown');
+                        parentLi.classList.toggle('mobile-open');
+                    }
+                });
             });
 
             // Close menu when clicking on a nav link (mobile)
