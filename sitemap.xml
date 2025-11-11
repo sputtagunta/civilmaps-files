@@ -1,100 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    <!-- Main page -->
     <url>
         <loc>https://sputtagunta.github.io/civilmaps-files/</loc>
-        <lastmod>2025-11-11</lastmod>
+        <lastmod>2024-11-11T12:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-
-    <!-- Main index page with full content -->
     <url>
         <loc>https://sputtagunta.github.io/civilmaps-files/index.html</loc>
-        <lastmod>2025-11-11</lastmod>
+        <lastmod>2024-11-11T12:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-
-    <!-- Civil Maps Company Profile -->
     <url>
         <loc>https://sputtagunta.github.io/civilmaps-files/sections/civil-maps-company.html</loc>
-        <lastmod>2025-11-11</lastmod>
+        <lastmod>2024-11-11T12:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
-
-    <!-- Luminar Technologies Company Profile -->
     <url>
         <loc>https://sputtagunta.github.io/civilmaps-files/sections/luminar-technologies.html</loc>
-        <lastmod>2025-11-11</lastmod>
+        <lastmod>2024-11-11T12:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
-
-    <!-- Background section -->
     <url>
         <loc>https://sputtagunta.github.io/civilmaps-files/sections/background.html</loc>
-        <lastmod>2025-11-11</lastmod>
+        <lastmod>2024-11-11T12:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-
-    <!-- Disclosure Delta section -->
     <url>
         <loc>https://sputtagunta.github.io/civilmaps-files/sections/disclosure-delta.html</loc>
-        <lastmod>2025-11-11</lastmod>
+        <lastmod>2024-11-11T12:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-
-    <!-- Vote Mechanics section -->
     <url>
         <loc>https://sputtagunta.github.io/civilmaps-files/sections/vote-mechanics.html</loc>
-        <lastmod>2025-11-11</lastmod>
+        <lastmod>2024-11-11T12:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-
-    <!-- Founder Correspondence section -->
     <url>
         <loc>https://sputtagunta.github.io/civilmaps-files/sections/founder-correspondence.html</loc>
-        <lastmod>2025-11-11</lastmod>
+        <lastmod>2024-11-11T12:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-
-    <!-- Employee Compensation section -->
     <url>
         <loc>https://sputtagunta.github.io/civilmaps-files/sections/employee-compensation.html</loc>
-        <lastmod>2025-11-11</lastmod>
+        <lastmod>2024-11-11T12:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-
-    <!-- Material Issues section -->
     <url>
         <loc>https://sputtagunta.github.io/civilmaps-files/sections/material-issues.html</loc>
-        <lastmod>2025-11-11</lastmod>
+        <lastmod>2024-11-11T12:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-
-    <!-- SEC Disclosures section -->
     <url>
         <loc>https://sputtagunta.github.io/civilmaps-files/sections/sec-disclosures.html</loc>
-        <lastmod>2025-11-11</lastmod>
+        <lastmod>2024-11-11T12:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-
-    <!-- Corporate Developments section -->
     <url>
         <loc>https://sputtagunta.github.io/civilmaps-files/sections/corporate-developments.html</loc>
-        <lastmod>2025-11-11</lastmod>
+        <lastmod>2024-11-11T12:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-
 </urlset>
