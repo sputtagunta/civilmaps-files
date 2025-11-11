@@ -17,6 +17,22 @@
         <priority>1.0</priority>
     </url>
 
+    <!-- Civil Maps Company Profile -->
+    <url>
+        <loc>https://sputtagunta.github.io/civilmaps-files/sections/civil-maps-company.html</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Luminar Technologies Company Profile -->
+    <url>
+        <loc>https://sputtagunta.github.io/civilmaps-files/sections/luminar-technologies.html</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
     <!-- Background section -->
     <url>
         <loc>https://sputtagunta.github.io/civilmaps-files/sections/background.html</loc>
