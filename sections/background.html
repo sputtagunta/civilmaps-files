@@ -137,15 +137,15 @@
                 font-size: 1.4em;
                 margin-bottom: 15px;
                 padding-bottom: 10px;
-                padding-left: 0;
-                padding-right: 0;
+                padding-left: 12px;
+                padding-right: 12px;
             }
 
             h4 {
                 font-size: 1.1em;
                 margin-top: 20px;
-                padding-left: 0;
-                padding-right: 0;
+                padding-left: 12px;
+                padding-right: 12px;
             }
 
             h4:before {
@@ -155,21 +155,32 @@
             p, ul, ol {
                 font-size: 0.95em;
                 line-height: 1.7;
-                padding-left: 0;
-                padding-right: 0;
+                padding-left: 12px;
+                padding-right: 12px;
             }
 
             ul, ol {
-                margin-left: 20px;
+                margin-left: 32px;
             }
 
             .highlight-quote,
             .key-fact-box {
-                padding: 15px 5px;
-                margin: 15px 0;
+                padding: 12px;
+                margin: 15px 12px;
                 font-size: 0.9em;
                 border-left-width: 3px;
                 border-right: none;
+            }
+
+            .highlight-quote p,
+            .highlight-quote ul,
+            .highlight-quote ol,
+            .key-fact-box p,
+            .key-fact-box ul,
+            .key-fact-box ol {
+                padding-left: 0;
+                padding-right: 0;
+                margin-left: 0;
             }
 
             .doc-link {
