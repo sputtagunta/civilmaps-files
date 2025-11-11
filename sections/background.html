@@ -156,10 +156,17 @@
             }
 
             .highlight-quote,
-            .key-fact-box {
-                padding: 3vh 3vw;
-                margin: 5vh 3vw;
-                font-size: 0.9em;
+            .key-fact-box,
+            .evidence-box,
+            .warning-box,
+            .legal-note,
+            .critical-box,
+            .info-box {
+                padding: 4vh 4vw;
+                margin: 6vh 4vw;
+                font-size: 1em;
+                line-height: 1.8;
+                font-weight: 400;
                 border-left-width: 3px;
                 border-right: none;
             }
@@ -170,6 +177,17 @@
             .key-fact-box p,
             .key-fact-box ul,
             .key-fact-box ol {
+            }
+
+            .highlight-quote strong,
+            .key-fact-box strong,
+            .evidence-box strong,
+            .warning-box strong,
+            .legal-note strong,
+            .critical-box strong,
+            .info-box strong {
+                font-size: 1.1em;
+                font-weight: 600;
                 padding-left: 0;
                 padding-right: 0;
                 margin-left: 0;
