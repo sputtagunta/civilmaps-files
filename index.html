@@ -1579,29 +1579,82 @@
 
         /* Mobile Responsive */
         @media (max-width: 768px) {
+            body {
+                padding: 10px 0;
+            }
+
+            .container {
+                padding: 0;
+            }
+
             .tldr-hero {
-                padding: 25px;
+                padding: 8px;
+                margin: 15px 8px;
+                border-radius: 8px;
             }
 
             .tldr-header h1 {
-                font-size: 1.8em;
+                font-size: 1.6em;
+                padding: 0 8px;
+            }
+
+            .case-number,
+            .status-date {
+                padding: 0 8px;
+            }
+
+            .tldr-summary {
+                padding: 8px;
+                margin: 15px 0;
+            }
+
+            .tldr-summary h2 {
+                font-size: 1.4em;
+                padding: 0 8px;
+            }
+
+            .headline {
+                padding: 12px 8px;
+                margin: 15px 0;
+                font-size: 1em;
             }
 
             .tldr-bullets {
                 grid-template-columns: 1fr;
+                padding: 0 8px;
+            }
+
+            .bullet-section {
+                padding: 12px 8px;
+                margin: 15px 0;
             }
 
             .story-step {
                 flex-direction: column;
-                padding: 20px;
+                padding: 12px 8px;
+                margin: 15px 8px;
             }
 
             .step-number {
                 align-self: flex-start;
             }
 
+            .step-content h3 {
+                font-size: 1.2em;
+            }
+
             .matters-grid {
                 grid-template-columns: 1fr;
+                padding: 0 8px;
+            }
+
+            .matter-card {
+                padding: 12px 8px;
+            }
+
+            .next-steps-simple,
+            .why-matters-simple {
+                padding: 12px 8px;
             }
 
             .viz-grid {
@@ -1610,22 +1663,31 @@
 
             .anchor-grid {
                 grid-template-columns: 1fr;
+                padding: 0 8px;
+            }
+
+            .anchor-card {
+                padding: 12px 8px;
             }
 
             .excerpt-header {
                 flex-direction: column;
+                padding: 8px;
             }
 
             .evidentiary-section {
-                padding: 20px;
+                padding: 12px 8px;
+                margin: 15px 8px;
             }
 
             .clause-card {
-                padding: 20px;
+                padding: 12px 8px;
+                margin: 15px 8px;
             }
 
             .analysis-point {
                 flex-direction: column;
+                padding: 12px 8px;
             }
 
             .point-number {
@@ -1635,6 +1697,7 @@
             .smoking-gun {
                 flex-direction: column;
                 text-align: center;
+                padding: 12px 8px;
             }
 
             .smoking-gun-icon {
@@ -1643,6 +1706,27 @@
 
             .supporting-evidence-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .background-container,
+            .info-box,
+            .intro {
+                padding: 12px 8px;
+                margin: 15px 8px;
+            }
+
+            h1, h2, h3, h4 {
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+
+            p, ul, ol {
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+
+            ul, ol {
+                margin-left: 28px;
             }
         }
     </style>
