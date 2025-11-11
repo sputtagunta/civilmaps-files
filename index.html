@@ -2187,8 +2187,8 @@
                 <li class="has-dropdown">
                     <a class="nav-link dropdown-toggle">Companies</a>
                     <ul class="submenu">
-                        <li><a href="sections/civil-maps-company.html" class="nav-link">Civil Maps</a></li>
-                        <li><a href="sections/luminar-technologies.html" class="nav-link">Luminar Technologies</a></li>
+                        <li><a href="#civil-maps" class="nav-link" data-section="civil-maps">Civil Maps</a></li>
+                        <li><a href="#luminar-technologies" class="nav-link" data-section="luminar-technologies">Luminar Technologies</a></li>
                     </ul>
                 </li>
 
@@ -3130,6 +3130,22 @@
         </div>
         <!-- End Court Filings Section -->
 
+        <!-- Civil Maps Company Section -->
+        <div id="civil-maps" class="content-section">
+            <div class="iframe-container">
+                <iframe src="sections/civil-maps-company.html" class="section-iframe" id="civil-maps-frame" title="Civil Maps Company Profile"></iframe>
+            </div>
+        </div>
+        <!-- End Civil Maps Company Section -->
+
+        <!-- Luminar Technologies Section -->
+        <div id="luminar-technologies" class="content-section">
+            <div class="iframe-container">
+                <iframe src="sections/luminar-technologies.html" class="section-iframe" id="luminar-frame" title="Luminar Technologies Profile"></iframe>
+            </div>
+        </div>
+        <!-- End Luminar Technologies Section -->
+
         <!-- SEC Filings Section -->
         <div id="sec-filings" class="content-section">
             <div class="iframe-container">
@@ -3616,12 +3632,17 @@
             // Close menu when clicking on a nav link (mobile)
             navLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
-                    e.preventDefault();
                     const sectionId = this.getAttribute('data-section');
-                    showSection(sectionId);
 
-                    // Update URL hash without scrolling
-                    history.pushState(null, null, `#${sectionId}`);
+                    // Only prevent default if this is a section link (has data-section attribute)
+                    // Allow normal navigation for external page links (like Civil Maps company page)
+                    if (sectionId) {
+                        e.preventDefault();
+                        showSection(sectionId);
+
+                        // Update URL hash without scrolling
+                        history.pushState(null, null, `#${sectionId}`);
+                    }
 
                     // Close mobile menu after clicking
                     if (window.innerWidth <= 968) {
