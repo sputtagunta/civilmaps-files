@@ -114,31 +114,31 @@
 
         @media (max-width: 768px) {
             body {
-                padding: 0;
+                padding: 10px 5px;
                 margin: 0;
             }
 
             h2 {
                 font-size: 1.4em;
-                padding: 15px;
+                padding: 10px 0;
                 margin: 0 0 15px 0;
             }
 
             h3 {
                 font-size: 1.2em;
-                padding: 0 15px;
+                padding: 0;
                 margin: 20px 0 10px 0;
             }
 
             h4 {
                 font-size: 1.1em;
-                padding: 0 15px;
+                padding: 0;
             }
 
             p, ul, ol {
                 font-size: 0.95em;
                 line-height: 1.7;
-                padding: 0 15px;
+                padding: 0;
             }
 
             ul, ol {
@@ -146,10 +146,17 @@
             }
 
             .highlight-box,
-            .info-section {
-                margin: 15px;
-                padding: 15px;
+            .info-section,
+            .development-item,
+            .critical-box,
+            .warning-box,
+            .legal-note,
+            .intro-text {
+                margin: 15px 0;
+                padding: 15px 5px;
                 font-size: 0.9em;
+                border-left-width: 3px;
+                border-right: none;
             }
         }
     </style>
