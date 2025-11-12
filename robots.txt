@@ -4,8 +4,8 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
-Sitemap: https://sputtagunta.github.io/civilmaps-files/sitemap.xml
+# Navigation references location
+Sitemap: https://sputtagunta.github.io/civilmaps-files/navigation_refs.xml
 
 # Allow common search engine bots
 User-agent: Googlebot
